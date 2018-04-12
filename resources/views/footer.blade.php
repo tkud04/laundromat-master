@@ -5,7 +5,7 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="footer-top">
 								<div class="logo">
-									<a href="index.html"><img src="img/logo/logo-white.png" alt=""></a>
+									<a href="index.html"><img src="{{asset('img/logo/logo-white.png')}}" alt=""></a>
 								</div>
 								<p>Lorem ipsum dolor sit amete, consectetur adipisicing sed do eiusmod tempor icididunt ut labore etel dolore
 									<br>magna aliqua. enim adminim veniam, done quisnostrud exercitation ullommodo.</p>
@@ -112,12 +112,12 @@
 						<div class="copyright-area">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="copyright">
-									<p>Copyright &copy; 2016 <a href="http://hastech.company/" target="_blank">Hastech</a>. All Right Reserved.</p>   
+									<p>Copyright &copy; 2018 <a href="#" target="_blank">LuxuryAffairs</a>. All Right Reserved.</p>   
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="payment">
-									<img src="img/payment/payment.png" alt="">
+									<img src="{{asset('img/payment/payment.png')}}" alt="">
 								</div>
 							</div>
 						</div>
@@ -138,7 +138,7 @@
 								<div class="col-md-5 col-sm-5">
 									<div class="main-img">
 										<div class="item">
-											<img src="img/porduct-details/1.jpg" alt="" />
+											<img src="{{asset('img/porduct-details/g1.jpg')}}" alt="" />
 										</div>
 									</div>
 								</div>

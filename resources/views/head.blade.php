@@ -32,7 +32,7 @@
 		<link rel="stylesheet" href="style.css')}}">
         <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 		<!-- modernizr js -->
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
 	</head>
 	<body>
 		<!--[if lt IE 8]>
