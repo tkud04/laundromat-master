@@ -54,10 +54,10 @@ class MainController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getProduct($product="")
+	public function getProduct($id="")
     {
-		if($product == "") return redirect()->intended('shop');
-    	return view('product_details');
+		if($id == "") return redirect()->intended('shop');
+    	return view('product-details');
     }
 	
 	/**
