@@ -1,36 +1,36 @@
 		<!-- all js here -->
 		<!-- jquery js -->
-		<script src="js/vendor/jquery-1.12.0.min.js"></script>	
+		<script src="{{asset('js/vendor/jquery-1.12.0.min.css')}}"></script>	
 		<!-- bootstrap js -->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="{{asset('js/bootstrap.min.css')}}"></script>
 		<!-- nivo slider -->
-		<script src="js/jquery.nivo.slider.pack.js"></script>
+		<script src="{{asset('js/jquery.nivo.slider.pack.css')}}"></script>
 		<!-- owl carousel js --> 
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{{asset('js/owl.carousel.min.css')}}"></script>
         <!-- mixitup js -->
-        <script src="js/jquery.mixitup.js"></script>
+        <script src="{{asset('js/jquery.mixitup.css')}}"></script>
 		<!-- wow js -->
-		<script src="js/wow.min.js"></script>
+		<script src="{{asset('js/wow.min.css')}}"></script>
 		<!-- jquery.counterup js -->
-        <script src="js/jquery.counterup.min.js"></script>
-		<script src="js/waypoints-min.js"></script>
+        <script src="{{asset('js/jquery.counterup.min.css')}}"></script>
+		<script src="{{asset('js/waypoints-min.css')}}"></script>
 		<!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>
+        <script src="{{asset('js/jquery-ui.min.css')}}"></script>
 		<!-- jquery.countdown js -->
-		<script src="js/jquery.countdown.min.js"></script>
+		<script src="{{asset('js/jquery.countdown.min.css')}}"></script>
 		<!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
+        <script src="{{asset('js/jquery.meanmenu.css')}}"></script>
         <!-- meanmenu js -->
-        <script src="js/ajax-mail.js"></script>
+        <script src="{{asset('js/ajax-mail.css')}}"></script>
 		<!-- elevateZoom js -->
-        <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>    
+        <script src="{{asset('js/jquery.elevateZoom-3.0.8.min.css')}}"></script>    
         <!-- Magnific Popup core JS file -->
-		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="{{asset('js/jquery.fancybox.pack.css')}}"></script>
 		<!-- scrollUp js -->
-        <script src="js/jquery.scrollUp.js"></script>
+        <script src="{{asset('js/jquery.scrollUp.css')}}"></script>
 		<!-- plugins js -->
-		<script src="js/plugins.js"></script>
+		<script src="{{asset('js/plugins.css')}}"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
+		<script src="{{asset('js/main.css')}}"></script>
 	</body>
 </html>

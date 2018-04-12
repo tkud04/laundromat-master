@@ -9,29 +9,29 @@
 									<div class="tab-content">
 										<div role="tabpanel" class="tab-pane active" id="home2">
 											<div class="zoom">
-												<a class="zoom_01" rel="group" href="img/porduct-details/1.1.jpg">
-													<img class="" src="img/porduct-details/1.jpg"  alt="" />
+												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/1.1.jpg')}}">
+													<img class="" src="{{asset('img/porduct-details/1.jpg')}}"  alt="" />
 												</a>
 											</div>
 										</div>
 										<div role="tabpanel" class="tab-pane" id="profile2">		
 											<div class="zoom">
-												<a class="zoom_01" rel="group" href="img/porduct-details/3.jpg">
-													<img class="zoom_01" src="img/porduct-details/3.1.jpg"  alt="" />
+												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/3.jpg')}}">
+													<img class="zoom_01" src="{{asset('img/porduct-details/3.1.jpg')}}"  alt="" />
 												</a>
 											</div>
 										</div>
 										<div role="tabpanel" class="tab-pane" id="messages2">
 											<div class="zoom">
-												<a class="zoom_01" rel="group" href="img/porduct-details/4.jpg">
-													<img class="zoom_01" src="img/porduct-details/4.1.jpg"  alt="" />
+												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/4.jpg')}}">
+													<img class="zoom_01" src="{{asset('img/porduct-details/4.1.jpg')}}"  alt="" />
 												</a>
 											</div>
 										</div>
 										<div role="tabpanel" class="tab-pane" id="settings2">
 											<div class="zoom">
-												<a class="zoom_01" rel="group" href="img/porduct-details/5.jpg">
-													<img class="zoom_01" src="img/porduct-details/5.1.jpg"  alt="" />
+												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/5.jpg')}}">
+													<img class="zoom_01" src="{{asset('img/porduct-details/5.1.jpg')}}"  alt="" />
 												</a>
 											</div>
 										</div>
@@ -40,22 +40,22 @@
 										<div class="magnifier-gallery ind-style">
 											<div class="img-gallary">
 												<div role="presentation" class="active"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab">
-													<img  src="img/porduct-details/g1.jpg"  alt="" /></a>
+													<img  src="{{asset('img/porduct-details/g1.jpg')}}"  alt="" /></a>
 												</div>
 											</div>
 											<div class="img-gallary">
 												<div role="presentation"><a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab">
-													<img  src="img/porduct-details/g2.jpg" alt=""  /></a>
+													<img  src="{{asset('img/porduct-details/g2.jpg')}}" alt=""  /></a>
 												</div>
 											</div>
 											<div class="img-gallary">
 												<div role="presentation"><a href="#messages2" aria-controls="messages2" role="tab" data-toggle="tab">
-													<img  src="img/porduct-details/g3.jpg"  alt="" /></a>
+													<img  src="{{asset('img/porduct-details/g3.jpg')}}"  alt="" /></a>
 												</div>
 											</div>
 											<div class="img-gallary">
 												<div role="presentation"><a href="#settings2" aria-controls="settings2" role="tab" data-toggle="tab">
-													<img  src="img/porduct-details/g1.jpg"  alt="" /></a>
+													<img  src="{{asset('img/porduct-details/g1.jpg')}}"  alt="" /></a>
 												</div>
 											</div>	
 										</div>
@@ -201,8 +201,8 @@
 												<div class="single-product">
 													<div class="product-image fix">
 														<a href="#">
-															<img  src="img/product/1.jpg" alt="">
-															<img class="primary-2" src="img/product/2.jpg" alt="">
+															<img  src="{{asset('img/product/1.jpg')}}" alt="">
+															<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 														</a>
 														<div class="product-action">
 															<a href="#" data-toggle="tooltip"   title="Quick view"><i class="fa fa-eye"></i></a>
@@ -229,8 +229,8 @@
 												<div class="single-product">
 													<div class="product-image fix">
 														<a href="#">
-															<img  src="img/product/1.jpg" alt="">
-															<img class="primary-2" src="img/product/2.jpg" alt="">
+															<img  src="{{asset('img/product/1.jpg')}}" alt="">
+															<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 														</a>
 														<div class="product-action">
 															<a href="#" data-toggle="tooltip"   title="Quick view"><i class="fa fa-eye"></i></a>
@@ -257,8 +257,8 @@
 												<div class="single-product">
 													<div class="product-image fix">
 														<a href="#">
-															<img  src="img/product/1.jpg" alt="">
-															<img class="primary-2" src="img/product/2.jpg" alt="">
+															<img  src="{{asset('img/product/1.jpg')}}" alt="">
+															<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 														</a>
 														<div class="product-action">
 															<a href="#" data-toggle="tooltip"   title="Quick view"><i class="fa fa-eye"></i></a>
@@ -285,8 +285,8 @@
 												<div class="single-product">
 													<div class="product-image fix">
 														<a href="#">
-															<img  src="img/product/1.jpg" alt="">
-															<img class="primary-2" src="img/product/2.jpg" alt="">
+															<img  src="{{asset('img/product/1.jpg')}}" alt="">
+															<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 														</a>
 														<div class="product-action">
 															<a href="#" data-toggle="tooltip"   title="Quick view"><i class="fa fa-eye"></i></a>
@@ -321,7 +321,7 @@
 						</div>
 						<div class="upsel-product">
 							<a href="#">
-								<img src="img/porduct-details/collection-3.jpg" alt="">
+								<img src="{{asset('img/porduct-details/collection-3.jpg')}}" alt="">
 							</a>
 						</div>
 					</div>

@@ -12,25 +12,25 @@
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 		<!-- all css here -->
 		<!-- bootstrap css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 		<!-- nivo-slider css -->
-		<link rel="stylesheet" href="css/default.css">
-		<link rel="stylesheet" href="css/nivo-slider.css">
+		<link rel="stylesheet" href="{{asset('css/default.css')}}">
+		<link rel="stylesheet" href="{{asset('css/nivo-slider.css')}}">
 		<!-- Important Owl stylesheet -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
 		<!-- font-awesome css -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 		<!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="{{asset('css/meanmenu.css')}}">
 		<!-- Magnific Popup core CSS file -->
-		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="{{asset('css/jquery.fancybox.css')}}">
 		<!-- animated css -->
-		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="{{asset('css/animate.css')}}">
 		<!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="{{asset('css/jquery-ui.min.css')}}">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="style.css')}}">
+        <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 		<!-- modernizr js -->
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	</head>
