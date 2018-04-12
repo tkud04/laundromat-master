@@ -34,9 +34,9 @@
 											<div class="slider-container theme-default">
 												<!-- Slider Image -->
 												<div id="mainSlider" class="nivoSlider slider-image">
-													<img src="img/slider/slide-mini-1.jpg" alt="main slider"  title="#htmlcaption1"/>
-													<img src="img/slider/slide-mini-2.jpg" alt="main slider"  title="#htmlcaption2"/>
-													<img src="img/slider/slide-mini-3.jpg" alt="main slider"  title="#htmlcaption3"/>
+													<img src="{{asset('img/slider/slide-mini-1.jpg')}}" alt="main slider"  title="#htmlcaption1"/>
+													<img src="{{asset('img/slider/slide-mini-2.jpg')}}" alt="main slider"  title="#htmlcaption2"/>
+													<img src="{{asset('img/slider/slide-mini-3.jpg')}}" alt="main slider"  title="#htmlcaption3"/>
 												</div>
 												<!-- Slider Caption 1 -->
 												<div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
@@ -113,10 +113,10 @@
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-12">
 									<div class="lane-banner">
-										<a href="#"><img src="img/banner/fashion-shoes.jpg" alt=""/></a>
+										<a href="#"><img src="{{asset('img/banner/fashion-shoes.jpg')}}" alt=""/></a>
 									</div>
 									<div class="lane-banner">
-										<a href="#"><img src="img/banner/fashion-bags.jpg" alt=""/></a>
+										<a href="#"><img src="{{asset('img/banner/fashion-bags.jpg')}}" alt=""/></a>
 									</div>
 								</div>
 							</div>
@@ -125,14 +125,14 @@
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="slide-banar-5 line-fasion">
 									<a href="#">
-										<img src="img/fashion/fashion-wathches.jpg" alt="">
+										<img src="{{asset('img/fashion/fashion-wathches.jpg')}}" alt="">
 									</a>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="slide-banar-5 line-fasion">
 									<a href="#">
-										<img src="img/fashion/fashion-glases.jpg" alt="">
+										<img src="{{asset('img/fashion/fashion-glases.jpg')}}" alt="">
 									</a>
 								</div>
 							</div>

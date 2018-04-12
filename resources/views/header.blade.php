@@ -5,7 +5,7 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="logo">
-								<a href="{{url('/')}}"><img src="img/logo/logo.png" alt=""><span class="label label-default text-uppercase" style="letter-spacing: 3px;">Affairs</span></a>
+								<a href="{{url('/')}}"><img src="{{asset('img/logo/logo.png'}}" alt=""><span class="label label-default text-uppercase" style="letter-spacing: 3px;">Affairs</span></a>
 							</div>   
 						</div>
 						<div class="col-md-7 col-sm-4 col-xs-12">
@@ -70,7 +70,7 @@
 									<a class="icon-heaher" href="#"><i class="fa fa-cog"></i></a>
 									<ul>
 										<li><h3>Languages</h3></li>
-										<li><a href="#"><img src="img/language/english.png" alt="">english </a></li>
+										<li><a href="#"><img src="{{asset('img/language/english.png')}}" alt="">english </a></li>
 										<li>
 											<h3>Currencies</h3>
 											<span class="currencies">

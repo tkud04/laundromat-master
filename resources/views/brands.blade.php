@@ -5,22 +5,22 @@
 					<div class="col-md-12">
 						<div class="br-corosel ptb-70 ind-style">
 							<div class="brnd-logo">
-								<img src="img/brand/brand1.png" alt="">
+								<img src="{{asset('img/brand/brand1.png')}}" alt="">
 							</div>
 							<div class="brnd-logo">
-								<img src="img/brand/brand1.png" alt="">
+								<img src="{{asset('img/brand/brand1.png')}}" alt="">
 							</div>
 							<div class="brnd-logo">
-								<img src="img/brand/brand1.png" alt="">
+								<img src="{{asset('img/brand/brand1.png')}}" alt="">
 							</div>
 							<div class="brnd-logo">
-								<img src="img/brand/brand1.png" alt="">
+								<img src="{{asset('img/brand/brand1.png')}}" alt="">
 							</div>
 							<div class="brnd-logo">
-								<img src="img/brand/brand1.png" alt="">
+								<img src="{{asset('img/brand/brand1.png')}}" alt="">
 							</div>
 							<div class="brnd-logo">
-								<img src="img/brand/brand1.png" alt="">
+								<img src="{{asset('img/brand/brand1.png')}}" alt="">
 							</div>
 						</div>
 					</div>

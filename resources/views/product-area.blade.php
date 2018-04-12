@@ -8,8 +8,8 @@
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="product-details.html">
-										<img class="primary-1" src="img/product/1.jpg" alt="">
-										<img class="primary-2" src="img/product/2.jpg" alt="">
+										<img class="primary-1" src="{{asset('img/product/1.jpg')}}" alt="">
+										<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">
@@ -28,8 +28,8 @@
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="product-details.html">
-										<img class="primary-1" src="img/product/3.jpg" alt="">
-										<img class="primary-2" src="img/product/4.jpg" alt="">
+										<img class="primary-1" src="{{asset('img/product/3.jpg')}}" alt="">
+										<img class="primary-2" src="{{asset('img/product/4.jpg')}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">
@@ -56,8 +56,8 @@
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="product-details.html">
-										<img class="primary-1" src="img/product/5.jpg" alt="">
-										<img class="primary-2" src="img/product/6.jpg" alt="">
+										<img class="primary-1" src="{{asset('img/product/5.jpg')}}" alt="">
+										<img class="primary-2" src="{{asset('img/product/6.jpg')}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">
@@ -76,8 +76,8 @@
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="product-details.html">
-										<img class="primary-1" src="img/product/7.jpg" alt="">
-										<img class="primary-2" src="img/product/1.jpg" alt="">
+										<img class="primary-1" src="{{asset('img/product/7.jpg')}}" alt="">
+										<img class="primary-2" src="{{asset('img/product/1.jpg')}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">
@@ -104,8 +104,8 @@
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="product-details.html">
-										<img class="primary-1" src="img/product/6.jpg" alt="">
-										<img class="primary-2" src="img/product/5.jpg" alt="">
+										<img class="primary-1" src="{{asset('img/product/6.jpg')}}" alt="">
+										<img class="primary-2" src="{{asset('img/product/5.jpg')}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">
@@ -124,8 +124,8 @@
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="product-details.html">
-										<img class="primary-1" src="img/product/2.jpg" alt="">
-										<img class="primary-2" src="img/product/1.jpg" alt="">
+										<img class="primary-1" src="{{asset('img/product/2.jpg')}}" alt="">
+										<img class="primary-2" src="{{asset('img/product/1.jpg')}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">

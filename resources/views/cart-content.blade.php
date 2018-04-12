@@ -18,19 +18,19 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td class="product-thumbnail"><a href="#"><img src="img/cart/cart.jpg" alt="" /></a></td>
+											<td class="product-thumbnail"><a href="#"><img src="{{asset('img/cart/cartjpg')}}" alt="" /></a></td>
 											<td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-											<td class="product-price"><span class="amount">�165.00</span></td>
+											<td class="product-price"><span class="amount">$165.00</span></td>
 											<td class="product-quantity"><input type="number" value="1" /></td>
-											<td class="product-subtotal">�165.00</td>
+											<td class="product-subtotal">$165.00</td>
 											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
 										</tr>
 										<tr>
-											<td class="product-thumbnail"><a href="#"><img src="img/cart/cart2.jpg" alt="" /></a></td>
+											<td class="product-thumbnail"><a href="#"><img src="{{asset('img/cart/cart2jpg')}}" alt="" /></a></td>
 											<td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
-											<td class="product-price"><span class="amount">�50.00</span></td>
+											<td class="product-price"><span class="amount">$50.00</span></td>
 											<td class="product-quantity"><input type="number" value="1" /></td>
-											<td class="product-subtotal">�50.00</td>
+											<td class="product-subtotal">$50.00</td>
 											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
 										</tr>
 									</tbody>
@@ -56,7 +56,7 @@
 											<tbody>
 												<tr class="cart-subtotal">
 													<th>Subtotal</th>
-													<td><span class="amount">�215.00</span></td>
+													<td><span class="amount">$215.00</span></td>
 												</tr>
 												<tr class="shipping">
 													<th>Shipping</th>
@@ -65,7 +65,7 @@
 															<li>
 																<input type="radio" /> 
 																<label>
-																	Flat Rate: <span class="amount">�7.00</span>
+																	Flat Rate: <span class="amount">$7.00</span>
 																</label>
 															</li>
 															<li>
@@ -82,7 +82,7 @@
 												<tr class="order-total">
 													<th>Total</th>
 													<td>
-														<strong><span class="amount">�215.00</span></strong>
+														<strong><span class="amount">$215.00</span></strong>
 													</td>
 												</tr>											
 											</tbody>

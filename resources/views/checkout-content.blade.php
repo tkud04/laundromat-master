@@ -331,7 +331,7 @@
 											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con3" aria-expanded="false" aria-controls="payment-con3">
 											PayPal 
 											</a>	
-										<img src="img/payment/payment.png" alt="" />
+										<img src="{{asset('img/payment/payment.png')}}" alt="" />
 
 										</h3>
 										<div class="payment-content collapse"  id="payment-con3">
