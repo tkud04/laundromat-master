@@ -5,17 +5,17 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="logo">
-								<a href="index.html"><img src="img/logo/logo.png" alt=""></a>
+								<a href="{{url('/')}}"><img src="img/logo/logo.png" alt=""><span class="label label-default text-uppercase" style="letter-spacing: 3px;">Affairs</span></a>
 							</div>   
 						</div>
 						<div class="col-md-7 col-sm-4 col-xs-12">
 							<div class="main-menu visible-md visible-lg ">
 								<nav>
 									<ul class="main">
-										<li class="active "><a class="main-a" href="index.php"><span>Home</span></a></li>
-										<li class=""><a class="main-a" href="shop.php">Shop</a></li>
-										<li><a class="main-a" href="contact.php">Contact</a></li>
-										<li><a class="main-a" href="about.php">About Us</a></li>
+										<li class="active "><a class="main-a" href="{{url('/')}}"><span>Home</span></a></li>
+										<li class=""><a class="main-a" href="{{url('shop')}}">Shop</a></li>
+										<li><a class="main-a" href="{{url('contact')}}">Contact</a></li>
+										<li><a class="main-a" href="{{url('about')}}">About Us</a></li>
 									</ul>
 								</nav>
 							</div>
