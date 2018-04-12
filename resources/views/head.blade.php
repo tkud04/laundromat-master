@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- favicon
         ============================================ -->		
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('img/favicon.png')}}">
 		<!-- all css here -->
 		<!-- bootstrap css -->
 		<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
@@ -29,7 +29,7 @@
 		<!-- jquery-ui.min css -->
         <link rel="stylesheet" href="{{asset('css/jquery-ui.min.css')}}">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.css')}}">
+		<link rel="stylesheet" href="{{asset('style.css')}}">
         <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 		<!-- modernizr js -->
 		<script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>

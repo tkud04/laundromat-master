@@ -23,8 +23,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/1jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/2jpg')}}" alt="">
+											<img  src="{{asset('img/product/1.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
@@ -60,8 +60,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/3jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/2jpg')}}" alt="">
+											<img  src="{{asset('img/product/3.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
@@ -97,8 +97,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/4jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/1jpg')}}" alt="">
+											<img  src="{{asset('img/product/4.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/1.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
@@ -134,8 +134,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/5jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/2jpg')}}" alt="">
+											<img  src="{{asset('img/product/5.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
@@ -171,8 +171,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/1jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/2jpg')}}" alt="">
+											<img  src="{{asset('img/product/1.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
@@ -208,8 +208,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/3jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/2jpg')}}" alt="">
+											<img  src="{{asset('img/product/3.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
@@ -245,8 +245,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/4jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/1jpg')}}" alt="">
+											<img  src="{{asset('img/product/4.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/1.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
@@ -282,8 +282,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="product-details.html">
-											<img  src="{{asset('img/product/5jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/2jpg')}}" alt="">
+											<img  src="{{asset('img/product/5.jpg')}}" alt="">
+											<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
