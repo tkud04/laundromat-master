@@ -5,7 +5,7 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-3 col-xs-12">
 							<div class="logo">
-								<a href="{{url('/')}}"><img src="{{asset('img/logo/logo.png'}}" alt=""><span class="label label-default text-uppercase" style="letter-spacing: 3px;">Affairs</span></a>
+								<a href="{{url('/')}}"><img src="{{asset('img/logo/logo.png')}}" alt=""><span class="label label-default text-uppercase" style="letter-spacing: 3px;">Affairs</span></a>
 							</div>   
 						</div>
 						<div class="col-md-7 col-sm-4 col-xs-12">
@@ -28,7 +28,7 @@
                                         <li>
                                             <div class="sop-pro">
                                                 <div class="img-cart">
-                                                    <a href="#"><img src="img/cart/1.jpg" alt=""></a>
+                                                    <a href="#"><img src="{{asset('img/cart/1.jpg')}}" alt=""></a>
                                                 </div>
                                                 <div class="img-dtil">
                                                     <h4><a href="#">Commodo New</a></h4>
@@ -45,7 +45,7 @@
                                         <li>
                                             <div class="sop-pro">
                                                 <div class="img-cart">
-                                                    <a href="#"><img src="img/cart/1.jpg" alt=""></a>
+                                                    <a href="#"><img src="{{asset('img/cart/1.jpg')}}" alt=""></a>
                                                 </div>
                                                 <div class="img-dtil">
                                                     <h4><a href="#">Commodo New</a></h4>
@@ -104,10 +104,10 @@
                                 <div class="mobile-menu">
                                     <nav id="mobile-menu-active">
                                         <ul class="main">
-                                            <li class="active "><a class="main-a" href="index.php"><span>Home</span></a></li>
-                                            <li class=""><a class="main-a" href="shop.php">Shop</a></li>
-                                            <li><a class="main-a" href="contact.php">Contact</a></li>
-                                            <li><a class="main-a" href="about.php">About Us</a></li>
+										<li class="active "><a class="main-a" href="{{url('/')}}"><span>Home</span></a></li>
+										<li class=""><a class="main-a" href="{{url('shop')}}">Shop</a></li>
+										<li><a class="main-a" href="{{url('contact')}}">Contact</a></li>
+										<li><a class="main-a" href="{{url('about')}}">About Us</a></li>
                                         </ul>
                                     </nav>
                                 </div>	
