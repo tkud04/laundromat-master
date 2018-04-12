@@ -61,8 +61,8 @@
                                         </li>
                                         <li><p class="total">Total: <span class="amount">$523.00</span></p></li>
                                         <li>
-                                            <div class="view"><a href="checkout.php">Checkout</a></div>
-                                            <div class="chack-out"><a href="cart.php">View Cart</a></div>
+                                            <div class="view"><a href="{{url('checkout')}}">Checkout</a></div>
+                                            <div class="chack-out"><a href="{{url('cart')}}">View Cart</a></div>
                                         </li>
                                     </ul>
 								</div>
