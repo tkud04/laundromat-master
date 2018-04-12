@@ -124,7 +124,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/1.jpg" alt="">
 														<img class="primary-2" src="img/product/2.jpg" alt="">
 													</a>
@@ -152,7 +152,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/3.jpg" alt="">
 														<img class="primary-2" src="img/product/2.jpg" alt="">
 													</a>
@@ -187,7 +187,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/3.jpg" alt="">
 														<img class="primary-2" src="img/product/1.jpg" alt="">
 													</a>
@@ -222,7 +222,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/4.jpg" alt="">
 														<img class="primary-2" src="img/product/5.jpg" alt="">
 													</a>
@@ -250,7 +250,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/5.jpg" alt="">
 														<img class="primary-2" src="img/product/6.jpg" alt="">
 													</a>
@@ -285,7 +285,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/6.jpg" alt="">
 														<img class="primary-2" src="img/product/7.jpg" alt="">
 													</a>
@@ -320,7 +320,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/7.jpg" alt="">
 														<img class="primary-2" src="img/product/2.jpg" alt="">
 													</a>
@@ -348,7 +348,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/8.jpg" alt="">
 														<img class="primary-2" src="img/product/9.jpg" alt="">
 													</a>
@@ -383,7 +383,7 @@
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="product-details.php">
+													<a href="{{url('products/34')}}">
 														<img  src="img/product/8.jpg" alt="">
 														<img class="primary-2" src="img/product/9.jpg" alt="">
 													</a>
@@ -422,7 +422,7 @@
 								<div class="show-as-list">
 									<div class="single-product">
 										<div class="product-image fix">
-											<a href="product-details.php">
+											<a href="{{url('products/34')}}">
 												<img  src="img/product/8.jpg" alt="">
 												<img class="primary-2" src="img/product/9.jpg" alt="">
 											</a>
@@ -466,7 +466,7 @@
 									</div>
 									<div class="single-product">
 										<div class="product-image fix">
-											<a href="product-details.php">
+											<a href="{{url('products/34')}}">
 												<img  src="img/product/1.jpg" alt="">
 												<img class="primary-2" src="img/product/2.jpg" alt="">
 											</a>
@@ -510,7 +510,7 @@
 									</div>
 									<div class="single-product">
 										<div class="product-image fix">
-											<a href="product-details.php">
+											<a href="{{url('products/34')}}">
 												<img  src="img/product/5.jpg" alt="">
 												<img class="primary-2" src="img/product/6.jpg" alt="">
 											</a>
@@ -554,7 +554,7 @@
 									</div>
 									<div class="single-product">
 										<div class="product-image fix">
-											<a href="product-details.php">
+											<a href="{{url('products/34')}}">
 												<img  src="img/product/9.jpg" alt="">
 												<img class="primary-2" src="img/product/8.jpg" alt="">
 											</a>

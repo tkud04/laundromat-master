@@ -28,6 +28,66 @@ class MainController extends Controller {
     {
     	return view('index');
     }
-    
+	
+	/**
+	 * Show the application About screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getAbout()
+    {
+    	return view('about');
+    }
+	
+	/**
+	 * Show the application Shop screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getShop()
+    {
+    	return view('shop');
+    }
+	
+	/**
+	 * Show the application Product details screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getProduct($product="")
+    {
+		if($product == "") return redirect()->intended('shop');
+    	return view('product_details');
+    }
+	
+	/**
+	 * Show the application Contact screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getContact()
+    {
+    	return view('contact');
+    }
+	
+	/**
+	 * Show the application Cart screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getCart()
+    {
+    	return view('cart');
+    }
+
+	/**
+	 * Show the application Checkout screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getCheckout()
+    {
+    	return view('checkout');
+    }    
 
 }
