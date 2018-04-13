@@ -69,22 +69,6 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="subscribe-box">
-								<form id="mc-form" class="mc-form">
-									<input id="mc-email" class="subs-box" type="email" autocomplete="off" placeholder="Enter your Email address...">
-									<button id="mc-submit" type="submit">Subscribe<i class="fa fa-long-arrow-right"></i></button>
-								</form>
-								<!-- mailchimp-alerts Start -->
-                                <div class="mailchimp-alerts text-centre">
-                                     <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                                     <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                     <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                                </div><!-- mailchimp-alerts end -->
-							</div>
-						</div>
-					</div>
-					<div class="row">
 						<div class="copyright-area">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="copyright">
