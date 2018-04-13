@@ -8,6 +8,4 @@
 @include("testimonial")
 @include("product-area")
 @include("brands")
-
-@include("about-content")
 @stop
