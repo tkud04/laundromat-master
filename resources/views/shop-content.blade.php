@@ -126,8 +126,8 @@
 											<div class="single-product">
 												<div class="product-image fix">
 													<a href="{{url('products/34')}}">
-														<img  src="{{asset('img/product/1.jpg')}}" alt="">
-														<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
+														<img  src="{{$img[0]}}" alt="">
+														<img class="primary-2" src="{{$ret[i]+images[1]}}" alt="">
 													</a>
 													<div class="product-action">
 														<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>

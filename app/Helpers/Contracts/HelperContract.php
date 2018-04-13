@@ -10,9 +10,9 @@ Interface HelperContract
         public function createProductData($data);
         public function getProducts();
         public function getProduct($id);
-        public function checkout();
+        /*public function checkout();
         public function addToCart($user,$id);
         public function removeFromCart($user,$id);
-        public function getWinners();
+        public function getWinners();*/
 }
  ?>
