@@ -51,30 +51,6 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<div class="division">
-									<h4 class="title-footer">Our Offers</h4>
-									<ul class="Column-one">
-										<li><a href="#">New collection</a></li>
-										<li><a href="#">Best sellers</a></li>
-										<li><a href="#">Manufacturers</a></li>
-										<li><a href="#">New products</a></li>
-										<li><a href="#">Special products</a></li>  
-									</ul>
-								</div>
-							</div>
-							<div class="col-md-2 hidden-sm hidden-xs">
-								<div class="division">
-									<h4 class="title-footer">Help</h4>
-									<ul class="Column-one">
-										<li><a href="?">Help &amp; Contact</a></li>
-										<li><a href="?">Shipping &amp; taxes</a></li>
-										<li><a href="?">Return policy</a></li>
-										<li><a href="?">Affiliates</a></li>
-										<li><a href="?">Legal Notice</a></li>   
-									</ul>
-								</div>
-							</div>
 							<div class="col-md-3 hidden-sm hidden-xs">
 								<div class="tag">
 									<h4 class="title-footer">Product tags</h4>
