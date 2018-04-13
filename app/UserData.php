@@ -13,6 +13,6 @@ class UserData extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'address', 'company', 'city', 'state', 'zip'
+        'user_id', 'address', 'company', 'city', 'state', 'zip', 'country'
     ];
 }

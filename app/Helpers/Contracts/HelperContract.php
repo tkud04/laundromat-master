@@ -4,18 +4,15 @@ namespace App\Helpers\Contracts;
 Interface HelperContract
 {
         public function sendEmail($to,$subject,$data,$view,$type);
-        public function createClient($data);
-        public function createClientData($data);
-        public  function getIRSNumber();
-        public function getReferenceNumber();      
-        public function getBatchNumber();      
-        public function getWinningNumber();      
-        public function getSerialNumber();     
-        public function addTestimonial($data);
-        public function getTestimonials();
-        public function getTestimonial($url);
-        public function getClients();
-        public function deleteClient($id);
+        public function createUser($data);
+        public function createUserData($data);
+        public function createProduct($data);
+        public function createProductData($data);
+        public function getProducts();
+        public function getProduct($id);
+        public function checkout();
+        public function addToCart($user,$id);
+        public function removeFromCart($user,$id);
         public function getWinners();
 }
  ?>

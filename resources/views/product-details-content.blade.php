@@ -7,6 +7,7 @@
 							<div class="col-md-5 col-sm-6 col-xs-12 ">
 								<div class="main-img">
 									<div class="tab-content">
+									@for($i = 0; $i < count($images); $i++)
 										<div role="tabpanel" class="tab-pane active" id="home2">
 											<div class="zoom">
 												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/1.1.jpg')}}">
@@ -14,27 +15,7 @@
 												</a>
 											</div>
 										</div>
-										<div role="tabpanel" class="tab-pane" id="profile2">		
-											<div class="zoom">
-												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/3.jpg')}}">
-													<img class="zoom_01" src="{{asset('img/porduct-details/3.1.jpg')}}"  alt="" />
-												</a>
-											</div>
-										</div>
-										<div role="tabpanel" class="tab-pane" id="messages2">
-											<div class="zoom">
-												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/4.jpg')}}">
-													<img class="zoom_01" src="{{asset('img/porduct-details/4.1.jpg')}}"  alt="" />
-												</a>
-											</div>
-										</div>
-										<div role="tabpanel" class="tab-pane" id="settings2">
-											<div class="zoom">
-												<a class="zoom_01" rel="group" href="{{asset('img/porduct-details/5.jpg')}}">
-													<img class="zoom_01" src="{{asset('img/porduct-details/5.1.jpg')}}"  alt="" />
-												</a>
-											</div>
-										</div>
+									@endfor
 									</div>
 									<div class="" role="tablist">
 										<div class="magnifier-gallery ind-style">

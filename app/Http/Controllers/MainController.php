@@ -29,15 +29,6 @@ class MainController extends Controller {
     	return view('index');
     }
 	
-	/**
-	 * Show the application About screen to the user.
-	 *
-	 * @return Response
-	 */
-	public function getAbout()
-    {
-    	return view('about');
-    }
 	
 	/**
 	 * Show the application Shop screen to the user.
@@ -54,10 +45,21 @@ class MainController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getProduct($id="")
+	public function getProducts($id="")
     {
-		if($id == "") return redirect()->intended('shop');
-    	return view('product-details');
+		if($id != "")
+		{
+			$ret = $this->helpers->getProduct($id);
+			return view('shop',compact(['ret']));
+		}
+
+        else
+		{
+			$ret = $this->helpers->getProducts();
+			return view('product_details',compact(['ret']));
+		}
+		
+    	
     }
 	
 	/**

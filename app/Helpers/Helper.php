@@ -6,9 +6,12 @@ use Crypt;
 use Carbon\Carbon; 
 use Mail;
 use Auth; 
-use App\Clients;
-use App\ClientData;
-use App\Testimonials;
+use App\User;
+use App\UserData;
+use App\Products;
+use App\ProductDetails;
+use App\Reviews;
+
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class Helper implements HelperContract
@@ -53,171 +56,108 @@ class Helper implements HelperContract
            }
            
            
-           function createClient($data)
+           function createUser($data)
            {
-           	$ret = Clients::create(['fname' => $data['fname'], 
+           	$ret = User::create(['fname' => $data['fname'], 
                                                       'lname' => $data['lname'],                                                      
                                                       'phone' => $data['phone'], 
                                                       'email' => $data['email'], 
-                                                      'agent' => "", 
-                                                      'gender' => $data['gender']
+                                                      'role' => $data['email'], 
+                                                      'password' => bcrypt($data['password']), 
                                                       ]);
                                                       
                 return $ret;
            } 
            
-           function createClientData($data)
+           function createUserData($data)
           {
-          	$rd = ClientData::create(['client_id' => $data['client_id'], 
-                                                      'salary' => "", 
-                                                      'means_id' => "", 
-                                                      'birth_year' => $data['birth-year'], 
-                                                      'birth_month' => $data['birth-month'], 
-                                                      'birth_day' => $data['birth-day'], 
-                                                      'city_birth' => $data['city-birth'], 
-                                                      'birth_country' => $data['birth-country'], 
-                                                      'native_country' => $data['native-country'], 
+          	$rd = UserData::create(['user_id' => $data['user_id'], 
                                                       'address' => $data['address'], 
                                                       'city' => $data['city'], 
-                                                      'region' => $data['region'], 
-                                                      'postal_code' => $data['postal-code'], 
-                                                      'contact_country' => $data['contact-country'], 
-                                                      'marital_status' => $data['marital-status'], 
-                                                      'kids' => $data['kids'], 
-                                                      'irs' => "", 
-                                                      'rf' => "", 
-                                                      'bn' => "", 
-                                                      'wn' => "", 
-                                                      'sn' => "", 
-                                                      'proof' => "", 
+                                                      'state' => $data['state'], 
+                                                      'zipcode' => $data['zipcode'], 
+                                                      'country' => $data['country'], 
+                                                      'company' => $data['company'], 
                                                     ]);
               return $rd;
           }
           
-          function addTestimonial($data)
+          function createProduct($data)
            {
-           	$ret = Testimonials::create(['name' => $data['name'], 
-                                                      'country' => $data['country'],                                                      
-                                                      'content' => $data['content'], 
-                                                      'url' => $data['url'], 
-                                                       'title' => $data['title'], 
-                                                        'img' => $data['img']
+           	$ret = Products::create(['name' => $data['name'], 
+                                                      'price' => $data['price'],                                                      
+                                                      'in_stock' => "yes", 
                                                       ]);
                                                       
                 return $ret;
            } 
            
-           function getTestimonials()
+           function createProductData($data)
+          {
+          	$ret = ProductDetails::create(['product_id' => $data['product_id'], 
+                                                      'brand' => $data['brand'],                                                      
+                                                      'category' => $data['category'],
+                                                      'description' => $data['category'],
+                                                       'colors' => $data['colors'],
+                                                      ]);
+              return $ret;                                 
+          }      
+          
+          
+          function getProducts()
           {
           	$ret = [];
-          	$t = Testimonials::all();
-          	 if($t != null)
+          	$products = Products::orderBy('created_at', 'desc')->get();
+          	 if($products != null)
               {
-              	foreach($t as $tales){
+              	foreach($products as $p){
+              	$pd = ProductData::where("product_id", $p->id)->first();
+                  $pi = ProductImages::where("product_id", $p->id)->get();
               	$temp = [];
-              	$temp['title'] = $tales->title;
-                  $temp['img'] = $tales->img;
-                  $temp['name'] = $tales->name;
-                  $temp['country'] = $tales->country;
-                  $temp['url'] = $tales->url;
-                  $temp['content'] = $tales->content;
-                  array_push($ret, $temp);
-                 } 
-              }
-              return $ret;
-          }
-          
-          function getTestimonial($url)
-          {
-          	$temp = [];
-          	$tales = Testimonials::where("url",$url)->first();
-          	 if($tales != null)
-              {
-              	$temp['title'] = $tales->title;
-                  $temp['img'] = $tales->img;
-                  $temp['name'] = $tales->name;
-                  $temp['country'] = $tales->country;
-                  $temp['url'] = $tales->url;
-                  $temp['content'] = $tales->content;              
-              }
-              return $temp;
-          }
-          
-          
-          function getIRSNumber()
-          {
-          	$length = 4;
-          	$ret = openssl_random_pseudo_bytes($length, $cstrong);
-              $ret = bin2hex($ret);
-              $ret = $ret."-";
-              return $ret;
-          }
-          
-          function getReferenceNumber()
-          {
-          	$length = 4;
-          	$ret = openssl_random_pseudo_bytes($length, $cstrong);
-              $ret = bin2hex($ret);
-              return $ret;
-          }
-          
-          function getBatchNumber()
-          {
-          	$length = 5;
-          	$ret = openssl_random_pseudo_bytes($length, $cstrong);
-              $ret = bin2hex($ret);
-              $ret = $ret."/".date("sms");
-              return $ret;
-          }
-          
-          function getWinningNumber()
-          {
-          	$length = 3;
-          	$ret = openssl_random_pseudo_bytes($length, $cstrong);
-              $ret = bin2hex($ret);
-              return $ret;
-          }
-          
-          function getSerialNumber()
-          {
-          	$length = 5;
-          	$ret = openssl_random_pseudo_bytes($length, $cstrong);
-              $ret = bin2hex($ret);
-              return $ret;
-          }
-          
-          
-          function getClients()
-          {
-          	$ret = [];
-          	$clients = Clients::orderBy('created_at', 'desc')->get();
-          	 if($clients != null)
-              {
-              	foreach($clients as $c){
-              	$cd = ClientData::where("client_id", $c->id)->first();
-              	$temp = [];
-              	$temp['id'] = $c->id;
-                  $temp['full_name'] = $c->fname." ".$c->lname;
-                  $temp['email'] = $c->email;
-                  $temp['phone'] = $c->phone;
-                  $temp['agent'] = $c->agent;
-                  $temp['gender'] = $c->gender;
-                  $temp['salary'] = $cd->salary;
-                  $temp['address'] = $cd->address;
-                  $temp['city'] = $cd->city;
-                  $temp['region'] = $cd->region;
-                  $temp['postal'] = $cd->postal_code;
-                  $temp['country'] = $cd->contact_country;
-                  $temp['marital'] = $cd->marital_status;
-                  $temp['kids'] = $cd->kids;
-                  $temp['irs'] = $cd->irs;
-                  $temp['rf'] = $cd->rf;
-                  $temp['bn'] = $cd->bn;
-                  $temp['wn'] = $cd->wn;
-                  $temp['sn'] = $cd->sn;
+              	$temp['id'] = $p->id;
+                  $temp['in_stock'] = $p->in_stock;
+                  $images = [];
+                  
+                  foreach($pi as $img)
+                 {
+                 	array_push($images, $img->url);
+                 }               
+                  $temp['images'] = $images;
+                  $temp['name'] = $p->name;
+                  $temp['price'] = $p->price;
                   $temp["date"] = $c->created_at->format("D, jS F Y h:i A");
                   array_push($ret, $temp);
                  } 
+              }
+              return $ret;
+          }
+		  
+		  
+          function getProduct($id)
+          {
+          	$ret = [];
+          	$p = Products::where('id', $id)->get();
+          	 if($p != null)
+              {
+              	$pd = ProductData::where("product_id", $p->id)->first();
+                  $pi = ProductImages::where("product_id", $p->id)->get();
+              	$temp = [];
+              	$temp['id'] = $p->id;
+                  $temp['in_stock'] = $p->in_stock;
+                  $images = [];
+                  
+                  foreach($pi as $img)
+                 {
+                 	array_push($images, $img->url);
+                 }               
+                  $temp['images'] = $images;
+                  $temp['name'] = $p->name;
+                  $temp['price'] = $p->price;
+                  $temp['description'] = $pd->description;
+                  $temp['brand'] = $pd->brand;
+                  $temp['category'] = $pd->category;
+                  $temp["date"] = $p->created_at->format("D, jS F Y h:i A");
+                  array_push($ret, $temp);
               }
               return $ret;
           }
@@ -234,27 +174,6 @@ class Helper implements HelperContract
                    if($cd != null) $cd->delete();
                } 
                                                       
-           } 
-           
-           
-           function getWinners()
-           {
-           	$ret = [
-                              ["10th December, 2017","Mike Ginka","$1,000,000","Naples, Italy"],
-                              ["10th December, 2017","Oleg Osipov","$1,000,000","Munich, Germany"],
-                              ["9th December, 2017","Daniel Kelly","$1,000,000","Prague, Czech Republic"],
-                              ["9th December, 2017","Michael Pariseau","$1,000,000","Lille, France"],
-                              ["9th December, 2017","Hai Nguyen","$1,000,000","Macau, China"],
-                              ["9th December, 2017","Jason Armstrong","$1,000,000","Brussels, Belgium"],
-                              ["9th December, 2017","Hibak Hersi","$1,000,000","Belmopan, Belize"],
-                              ["9th December, 2017","Donna Hoy","$1,000,000","Beijing, China"],
-                              ["7th December, 2017","Ryan Lewis","$1,000,000","Rio de Janeiro, Brazil"],
-                              ["7th December, 2017","Donald Traboulsee","$1,000,000","Sicily, Italy"],
-                              ["7th December, 2017","Firmanshah Basir","$1,000,000","Manama, Bahrain"],
-                              
-                           ];
-           
-               return $ret;
            } 
            
            
