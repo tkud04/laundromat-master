@@ -37,7 +37,7 @@ class MainController extends Controller {
 	 */
 	public function getShop()
     {
-    	$ret = $this->helpers->getProduct($id);
+    	$ret = $this->helpers->getProducts();
 		return view('shop',compact(['ret']));
     }
 	
