@@ -52,21 +52,6 @@
 								<li><a href="#">Yelow</a><span> (6)</span></li>
 							</ul> 
 						</div>
-						<div class="widget compare">
-							<h3>Compare Products</h3>
-							<ul>
-								<li>
-								<a href="#"> Exercitation ullamco</a> 
-								<a class="remove" href="#"> X</a> 
-								</li>
-								<li>
-									<a href="#">Fashion double</a>
-									<a class="remove" href="#"> X</a>
-								</li>
-							</ul> 
-							<a class="lixury-btn" href="#"> shop now </a>
-							<a class="lixury-btn right" href="#"> shop now </a>   
-						</div>
 					</div>
 					<div class="col-md-9 col-sm-12 col-xs-12">
 						<div class="row">
@@ -116,23 +101,28 @@
 								</div>
 							</div>
 						</div>
+						
+						@if(isset($ret) && count($ret) > 0)
+						@foreach($ret as $p)
 						<!-- Tab panes -->
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="home">
 								<div class="row">
 									<div class="product-area">
-									 @if(isset($ret) && count($ret) > 0)
+									 
+									     <?php
+										   $url = "products/".$p['id'];
+										   $images = $p['images'];
+										 ?>
 										<div class="col-md-4 col-sm-4 col-xs-12">
 											<div class="single-product">
 												<div class="product-image fix">
-													<a href="{{url('products/34')}}">
-														<img  src="{{$img[0]}}" alt="">
-														<img class="primary-2" src="{{$ret[i]+images[1]}}" alt="">
+													<a href="{{$url}}">
+														<img  src="{{$images[0]}}" alt="">
+														<img class="primary-2" src="{{images[1]}}" alt="">
 													</a>
 													<div class="product-action">
 														<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
-														<a href="#" data-toggle="tooltip"  title="Wishlist" ><i class="fa fa-heart"></i></a>
-														<a href="#" data-toggle="tooltip" data-placement="top" title="Compare" ><i class="fa fa-retweet"></i></a>
 													</div>
 													<div class="new-area">
 														<div class="new">
@@ -140,17 +130,16 @@
 														</div>
 													</div>
 												</div>
-												<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+												<h4 class="name"><a href="#">{{$p['name']}}</a></h4>
 												<span class="amount">
-													<del><span class="amount-del">$170.00</span></del>
-													$185.00
+													<del><span class="amount-del">${{$p['price'] + 200}}</span></del>
+													${{$p['price']}}
 												</span>
 												<div class="add-to-cart">
 													<a href="#"><i class="fa fa-shopping-cart"></i></a>
 												</div>
 											</div>
 										</div>
-										@endif
 									</div> 
 								</div>
 							</div>
@@ -158,9 +147,9 @@
 								<div class="show-as-list">
 									<div class="single-product">
 										<div class="product-image fix">
-											<a href="{{url('products/34')}}">
-												<img  src="{{asset('img/product/8.jpg')}}" alt="">
-												<img class="primary-2" src="{{asset('img/product/9.jpg')}}" alt="">
+											<a href="{{$url}}">
+												<img  src="{{$images[0]}}" alt="">
+												<img class="primary-2" src="{{$images[1]}}" alt="">
 											</a>
 											<div class="color">
 												<ul class="color-list">
@@ -176,7 +165,7 @@
 											</div>
 										</div>
 										<div class="product-details-shop ">
-											<h4 class="name"><a href="#">Adipisicing sed do</a></h4>
+											<h4 class="name"><a href="#">{{$p['name']}}</a></h4>
 											<div class="reating">
 												<span class="star-reating">
                                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -188,153 +177,21 @@
 												</span>
 											</div>
 											<span class="amount">
-												<del><span class="amount-del">$170.00</span></del>
-												$185.00
+												<del><span class="amount-del">{{$p['price'] + 20}}</span></del>
+												${{$p['price']}}
 											</span>
-											<p>Lorem ipsum dolor sit amete, consectetur news adipisicing sed do new fashion eiusmod tempor incididunt ut labore etel dolore magna aliqua. Ut enim news minimveniam, quis nostrud exercitation new ullamco laboris nisi news commodo consequat consectetur adipisicing. Fashion double layering. Lorem ipsum dolor sit amete, consectetur adipisicing sed do new eiusmod tempor incididunt ut labore etel dolore magna aliqua.</p>
+											<p>{{$p['description']}}</p>
 											<div class="product-action">
 												<a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart" ><i>Add To Cart</i></a>
 												<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
-												<a href="#" data-toggle="tooltip"  title="Wishlist" ><i class="fa fa-heart"></i></a>
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Compare" ><i class="fa fa-retweet"></i></a>
-											</div>	
-										</div>
-									</div>
-									<div class="single-product">
-										<div class="product-image fix">
-											<a href="{{url('products/34')}}">
-												<img  src="{{asset('img/product/1.jpg')}}" alt="">
-												<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
-											</a>
-											<div class="color">
-												<ul class="color-list">
-													<li class="bk"><span>bk</span></li>
-													<li class="rd"><span>rd</span></li>
-													<li class="yl"><span>yl</span></li>
-												</ul>
-											</div>
-											<div class="new-area sell-area">
-												<div class="new">
-													<span class="text-new"><span>sell</span></span>
-												</div>
-											</div>
-										</div>
-										<div class="product-details-shop ">
-											<h4 class="name"><a href="#">Adipisicing sed do</a></h4>
-											<div class="reating">
-												<span class="star-reating">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <a href="#">0 Review(s) / Add Your Review </a>
-												</span>
-											</div>
-											<span class="amount">
-												<del><span class="amount-del">$170.00</span></del>
-												$185.00
-											</span>
-											<p>Lorem ipsum dolor sit amete, consectetur news adipisicing sed do new fashion eiusmod tempor incididunt ut labore etel dolore magna aliqua. Ut enim news minimveniam, quis nostrud exercitation new ullamco laboris nisi news commodo consequat consectetur adipisicing. Fashion double layering. Lorem ipsum dolor sit amete, consectetur adipisicing sed do new eiusmod tempor incididunt ut labore etel dolore magna aliqua.</p>
-											<div class="product-action">
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart" ><i>Add To Cart</i></a>
-												<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
-												<a href="#" data-toggle="tooltip"  title="Wishlist" ><i class="fa fa-heart"></i></a>
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Compare" ><i class="fa fa-retweet"></i></a>
-											</div>	
-										</div>
-									</div>
-									<div class="single-product">
-										<div class="product-image fix">
-											<a href="{{url('products/34')}}">
-												<img  src="{{asset('img/product/5.jpg')}}" alt="">
-												<img class="primary-2" src="{{asset('img/product/6.jpg')}}" alt="">
-											</a>
-											<div class="color">
-												<ul class="color-list">
-													<li class="bk"><span>bk</span></li>
-													<li class="rd"><span>rd</span></li>
-													<li class="yl"><span>yl</span></li>
-												</ul>
-											</div>
-											<div class="new-area sell-area">
-												<div class="new">
-													<span class="text-new"><span>sell</span></span>
-												</div>
-											</div>
-										</div>
-										<div class="product-details-shop ">
-											<h4 class="name"><a href="#">Adipisicing sed do</a></h4>
-											<div class="reating">
-												<span class="star-reating">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <a href="#">0 Review(s) / Add Your Review </a>
-												</span>
-											</div>
-											<span class="amount">
-												<del><span class="amount-del">$170.00</span></del>
-												$185.00
-											</span>
-											<p>Lorem ipsum dolor sit amete, consectetur news adipisicing sed do new fashion eiusmod tempor incididunt ut labore etel dolore magna aliqua. Ut enim news minimveniam, quis nostrud exercitation new ullamco laboris nisi news commodo consequat consectetur adipisicing. Fashion double layering. Lorem ipsum dolor sit amete, consectetur adipisicing sed do new eiusmod tempor incididunt ut labore etel dolore magna aliqua.</p>
-											<div class="product-action">
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i>Add To Cart</i></a>
-												<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
-												<a href="#" data-toggle="tooltip"  title="Wishlist" ><i class="fa fa-heart"></i></a>
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Compare" ><i class="fa fa-retweet"></i></a>
-											</div>	
-										</div>
-									</div>
-									<div class="single-product">
-										<div class="product-image fix">
-											<a href="{{url('products/34')}}">
-												<img src="{{asset('img/product/9.jpg')}}" alt="">
-												<img class="primary-2" src="{{asset('img/product/8.jpg')}}" alt="">
-											</a>
-											<div class="color">
-												<ul class="color-list">
-													<li class="bk"><span>bk</span></li>
-													<li class="rd"><span>rd</span></li>
-													<li class="yl"><span>yl</span></li>
-												</ul>
-											</div>
-											<div class="new-area sell-area">
-												<div class="new">
-													<span class="text-new"><span>sell</span></span>
-												</div>
-											</div>
-										</div>
-										<div class="product-details-shop ">
-											<h4 class="name"><a href="#">Adipisicing sed do</a></h4>
-											<div class="reating">
-												<span class="star-reating">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <a href="#">0 Review(s) / Add Your Review </a>
-												</span>
-											</div>
-											<span class="amount">
-												<del><span class="amount-del">$170.00</span></del>
-												$185.00
-											</span>
-											<p>Lorem ipsum dolor sit amete, consectetur news adipisicing sed do new fashion eiusmod tempor incididunt ut labore etel dolore magna aliqua. Ut enim news minimveniam, quis nostrud exercitation new ullamco laboris nisi news commodo consequat consectetur adipisicing. Fashion double layering. Lorem ipsum dolor sit amete, consectetur adipisicing sed do new eiusmod tempor incididunt ut labore etel dolore magna aliqua.</p>
-											<div class="product-action">
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart" ><i>Add To Cart</i></a>
-												<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
-												<a href="#" data-toggle="tooltip"  title="Wishlist" ><i class="fa fa-heart"></i></a>
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Compare" ><i class="fa fa-retweet"></i></a>
 											</div>	
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						@endforeach
+						@endif
 						<div class="row">
 							<div class="col-md-12">
 								<div class="shop-pagination">

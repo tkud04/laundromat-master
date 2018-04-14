@@ -37,7 +37,8 @@ class MainController extends Controller {
 	 */
 	public function getShop()
     {
-    	return view('shop');
+    	$ret = $this->helpers->getProduct($id);
+		return view('shop',compact(['ret']));
     }
 	
 	/**
@@ -49,8 +50,7 @@ class MainController extends Controller {
     {
 		if($id != "")
 		{
-			$ret = $this->helpers->getProduct($id);
-			return view('shop',compact(['ret']));
+			return redirect()->intended('shop');
 		}
 
         else

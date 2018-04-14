@@ -9,7 +9,9 @@ use Auth;
 use App\User;
 use App\UserData;
 use App\Products;
-use App\ProductDetails;
+use App\ProductData;
+use App\ProductImages;
+use App\Cart;
 use App\Reviews;
 
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -94,14 +96,40 @@ class Helper implements HelperContract
            
            function createProductData($data)
           {
-          	$ret = ProductDetails::create(['product_id' => $data['product_id'], 
+          	$ret = ProductData::create(['product_id' => $data['product_id'], 
                                                       'brand' => $data['brand'],                                                      
                                                       'category' => $data['category'],
-                                                      'description' => $data['category'],
+                                                      'description' => $data['description'],
                                                        'colors' => $data['colors'],
                                                       ]);
               return $ret;                                 
-          }      
+          }   
+
+          function createProductImage($data)
+          {
+          	$ret = ProductImages::create(['product_id' => $data['product_id'], 
+                                                      'url' => $data['url'],                                                      
+                                                      ]);
+              return $ret;                                 
+          }   
+
+          function addToCart($data)
+          {
+          	$ret = Cart::create(['user_id' => $data['user_id'], 
+                                                      'product_id' => $data['product_id'],                                                      
+                                                      'qty' => $data['qty'],                                                      
+                                                      ]);
+              return $ret;                                 
+          }
+
+		  function removeFromCart($data)
+          {
+          	$ret = Cart::where(['user_id' => $data['user_id']]) 
+                       ->where(['product_id' => $data['product_id']])                                                      
+                       ->first();
+					   
+		    if($ret != null) $ret->delete();                                
+          } 		  
           
           
           function getProducts()
@@ -125,6 +153,7 @@ class Helper implements HelperContract
                   $temp['images'] = $images;
                   $temp['name'] = $p->name;
                   $temp['price'] = $p->price;
+                  $temp['description'] = $pd->description;
                   $temp["date"] = $c->created_at->format("D, jS F Y h:i A");
                   array_push($ret, $temp);
                  } 
@@ -136,7 +165,7 @@ class Helper implements HelperContract
           function getProduct($id)
           {
           	$ret = [];
-          	$p = Products::where('id', $id)->get();
+          	$p = Products::where('id', $id)->first();
           	 if($p != null)
               {
               	$pd = ProductData::where("product_id", $p->id)->first();

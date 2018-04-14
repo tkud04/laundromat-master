@@ -5,7 +5,7 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="footer-top">
 								<div class="logo">
-									<a href="index.html"><img src="{{asset('img/logo/logo-white.png')}}" alt=""></a>
+									<a href="{{url('/')}}"><img src="{{asset('img/logo/logo-white.png')}}" alt=""></a>
 								</div>
 								<p>Lorem ipsum dolor sit amete, consectetur adipisicing sed do eiusmod tempor icididunt ut labore etel dolore
 									<br>magna aliqua. enim adminim veniam, done quisnostrud exercitation ullommodo.</p>
