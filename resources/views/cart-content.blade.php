@@ -4,6 +4,7 @@
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
 					    @if(isset($cart) && count($cart) > 0)
+							<?php $ct = 0; ?>
 						<form action="#">				
 							<div class="table-content table-responsive">
 								<table>

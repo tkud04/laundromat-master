@@ -39,7 +39,8 @@ class MainController extends Controller {
 	public function getShop()
     {
     	$ret = $this->helpers->getProducts();
-		return view('shop',compact(['ret']));
+		$cart = $this->helpers->getCart();
+		return view('shop',compact(['ret','cart']));
     }
 	
 	/**
@@ -57,7 +58,8 @@ class MainController extends Controller {
         else
 		{
 			$ret = $this->helpers->getProduct($id);
-			return view('product_details',compact(['ret']));
+			$cart = $this->helpers->getCart();
+			return view('product_details',compact(['ret','cart']));
 		}
 		
     	
@@ -70,7 +72,8 @@ class MainController extends Controller {
 	 */
 	public function getContact()
     {
-    	return view('contact');
+		$cart = $this->helpers->getCart();
+    	return view('contact',compact(['cart']));
     }
 	
 	/**
@@ -80,7 +83,8 @@ class MainController extends Controller {
 	 */
 	public function getCart()
     {
-    	return view('cart');
+		$cart = $this->helpers->getCart();
+    	return view('cart',compact(['cart']));
     }
 
 	/**
@@ -90,7 +94,8 @@ class MainController extends Controller {
 	 */
 	public function getCheckout()
     {
-    	return view('checkout');
+		$cart = $this->helpers->getCart();
+    	return view('checkout',compact(['cart']));
     }
 
     /**
@@ -100,7 +105,8 @@ class MainController extends Controller {
 	 */
 	public function getAddProduct()
     {
-    	return view('a_p');
+		$cart = $this->helpers->getCart();
+    	return view('a_p',compact(['cart']));
     }    /**
 	 * Show the application Checkout screen to the user.
 	 *
