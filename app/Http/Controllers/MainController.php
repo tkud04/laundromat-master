@@ -112,7 +112,7 @@ class MainController extends Controller {
         
         $validator = Validator::make($req, [
                              'name' => 'required',
-                             'price' => 'required|numeric'
+                             'price' => 'required|numeric',
                              'brand' => 'required',
                              'category' => 'required|not_in:none',
                              'description' => 'required',
