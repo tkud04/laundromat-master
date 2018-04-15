@@ -24,6 +24,8 @@
 								<div class="header-userinfo">
                                     <a class="icon-heaher" href="#"><i class="fa fa-shopping-cart"></i><span>2</span></a>
                                     <ul class="shop-cart">
+									  @if(isset($cart) && count($cart > 0))
+									  @foreach($cart as $c)
                                         <li>
                                             <div class="sop-pro">
                                                 <div class="img-cart">
@@ -41,28 +43,13 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="sop-pro">
-                                                <div class="img-cart">
-                                                    <a href="#"><img src="{{asset('img/cart/1.jpg')}}" alt=""></a>
-                                                </div>
-                                                <div class="img-dtil">
-                                                    <h4><a href="#">Commodo New</a></h4>
-                                                    <span class="quantity">
-                                                        1 × 
-                                                        <span class="amount">$169.00</span>
-                                                    </span>
-                                                </div>
-                                                <div class="close-x">
-                                                    <a href="#">X</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li><p class="total">Total: <span class="amount">$523.00</span></p></li>
+									  @endforeach
+                                        <li><p class="total">Total: <span class="amount">$cart_total</span></p></li>
                                         <li>
                                             <div class="view"><a href="{{url('checkout')}}">Checkout</a></div>
                                             <div class="chack-out"><a href="{{url('cart')}}">View Cart</a></div>
                                         </li>
+									 @endif
                                     </ul>
 								</div>
 								<div class="header-language">
@@ -78,13 +65,13 @@
 										</li>
 									</ul>
 								</div>
-								<div class="header-cart">
+								<!--<div class="header-cart">
 									<a class="icon-heaher" href="#"><i class="fa fa-user"></i></a>
 									<ul>
 										<li><a href="#"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
 										<li><a href="#"><i class="fa fa-hand-o-right"></i>Check Out</a></li>
 									</ul>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</div>
