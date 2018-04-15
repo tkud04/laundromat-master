@@ -153,7 +153,7 @@ class MainController extends Controller {
 				foreach($imagesArr as $img)
 				{
 					$ret = ['id' => $product->id,"url" => $img];
-					$productImages = $this->helpers->createProductImages($req);
+					$productImages = $this->helpers->createProductImage($req);
 				}
 			}
 			
