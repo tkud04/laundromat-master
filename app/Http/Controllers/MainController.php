@@ -106,6 +106,7 @@ class MainController extends Controller {
 	public function getAddProduct()
     {
 		$cart = $this->helpers->getCart();
+		dd($cart);
     	return view('a_p',compact(['cart']));
     }    /**
 	 * Show the application Checkout screen to the user.
