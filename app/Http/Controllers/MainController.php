@@ -57,10 +57,10 @@ class MainController extends Controller {
 
         else
 		{
-			$ret = $this->helpers->getProduct($id);
+			$p = $this->helpers->getProduct($id);
 			$related_products = $this->helpers->getProducts();
 			$cart = $this->helpers->getCart();
-			return view('product-details',compact(['ret','cart','related_products']));
+			return view('product-details',compact(['p','cart','related_products']));
 		}
 		
     	
