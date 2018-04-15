@@ -157,7 +157,7 @@ class MainController extends Controller {
 				}
 			}
 			
-			Session::flash("create-product-status","success");
+			Session::flash("add-product-status","success");
 			return redirect()->intended('a-p');
          }
                  
