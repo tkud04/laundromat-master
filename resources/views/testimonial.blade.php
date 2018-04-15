@@ -4,7 +4,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="heading-title">
-							<h4>What’s client say?</h4>
+							<h4>What Our Clients Say</h4>
 						</div> 
 					</div>
 				</div>
@@ -13,40 +13,40 @@
 						<div class="tst-crosol">
 							<div class="testimonial">
 								<div class="tstmnil-content">
-									<p>Lorem ipsum dolor sit amet, new fashion consectetur adipiscing elit. Suspendisse consequat orci new sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat orci new sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl.</p>
+									<p>I love shopping with luxury affairs they seem to always have the items I want!</p>
 								</div>
 								<div class="info">
 									<div class="neme">
-										<p>accumsan</p>
+										<p>Tracy</p>
 									</div>
 									<div class="status">
-										<p>Developer</p>
+										<p>Mobile, AL</p>
 									</div>
 								</div>	
 							</div> 
 							<div class="testimonial">
 								<div class="tstmnil-content">
-									<p>Lorem ipsum dolor sit amet, new fashion consectetur adipiscing elit. Suspendisse consequat orci new sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat orci new sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl.</p>
+									<p>Satisfaction guaranteed, I absolutely luv this site</p>
 								</div>
 								<div class="info">
 									<div class="neme">
-										<p>accumsan</p>
+										<p>Samantha</p>
 									</div>
 									<div class="status">
-										<p>Developer</p>
+										<p>Miami, FL</p>
 									</div>
 								</div>	
 							</div>
 							<div class="testimonial">
 								<div class="tstmnil-content">
-									<p>Lorem ipsum dolor sit amet, new fashion consectetur adipiscing elit. Suspendisse consequat orci new sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat orci new sed nibh ultricies, eget sollicitudin quam consectetur. Donec at mattis purus, ut accumsan nisl.</p>
+									<p>I bought all my jewellry from luxury affairs :)</p>
 								</div>
 								<div class="info">
 									<div class="neme">
-										<p>accumsan</p>
+										<p>Catarina</p>
 									</div>
 									<div class="status">
-										<p>Developer</p>
+										<p>Ibiza, Spain</p>
 									</div>
 								</div>	
 							</div>

@@ -12,8 +12,8 @@
 					<div class="col-md-12">
 						<div class="filter-mnu">
 							<div class="filter" data-filter="all">all</div>
-							<div class="filter" data-filter=".Nightwear">Watches</div>
-							<div class="filter" data-filter=".Dress">Glasses</div>
+							<div class="filter" data-filter=".Nightwear">Accessories</div>
+							<div class="filter" data-filter=".Dress">Clothes</div>
 							<div class="filter" data-filter=".Jewellery">Jewellery</div>
 						</div>
 					</div>
