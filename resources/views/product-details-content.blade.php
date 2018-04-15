@@ -14,7 +14,7 @@
 										<div role="tabpanel" class="tab-pane active" id="home2">
 											<div class="zoom">
 												<a class="zoom_01" rel="group" href="{{$images[0]}}">
-													<img class="" src="{{{{$images[0]}}}}"  alt="" />
+													<img class="" src="{{$images[1]}}"  alt="" />
 												</a>
 											</div>
 										</div>
@@ -26,10 +26,10 @@
 													<img  src="{{$images[0]}}"  alt="" /></a>
 												</div>
 											</div>
-											@for($i = 1; $i < count($images); $i++)
+											@for($i = 0; $i < count($images); $i++)
 											<div class="img-gallary">
 												<div role="presentation"><a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab">
-													<img  src="{{asset('img/porduct-details/g2.jpg')}}" alt=""  /></a>
+													<img  src="{{$images[$i]}}" alt=""  /></a>
 												</div>
 											</div>
 											@endfor
@@ -75,10 +75,7 @@
 										Tags: 
 										<a href="#">Collection Women</a>,
 										<a href="#"> Fashion</a>,
-										<a href="#"> New</a>,
-										<a href="#"> Theme</a>,
-										<a href="#"> Top</a>.
-										<a href="#"> Wordpress</a>
+										<a href="#"> New</a>
 									</div>
 								</div>
 							</div>
@@ -106,7 +103,7 @@
 												</tr>
 												<tr> 	
 													<th>Colors</th>
-													<td>${{$p['color']}}</td>
+													<td>${{$p['colors']}}</td>
 												</tr>
 											</table>
 										</div>
