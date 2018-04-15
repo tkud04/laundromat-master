@@ -97,7 +97,7 @@
 												<div class="product-image fix">
 													<a href="{{$url}}">
 														<img  src="{{$images[0]}}" alt="">
-														<img class="primary-2" src="{{images[1]}}" alt="">
+														<img class="primary-2" src="{{$images[1]}}" alt="">
 													</a>
 													<div class="product-action">
 														<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
