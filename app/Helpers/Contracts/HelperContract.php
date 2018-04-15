@@ -12,6 +12,8 @@ Interface HelperContract
         public function getProduct($id);
 		public function addToCart($data);
 		public function removeFromCart($data);
+		public function search($term);
+		public function paginate($items, $perPage);
         /*public function checkout();*/
 }
  ?>

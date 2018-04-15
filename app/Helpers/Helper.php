@@ -204,6 +204,19 @@ class Helper implements HelperContract
                } 
                                                       
            } 
+		   
+		   function search($term)
+           {
+           	$client = Clients::where("id", $id)->first();
+           
+               if($client != null)
+               {
+               	$client->delete();
+                   $cd = ClientData::where("client_id", $id)->first();
+                   if($cd != null) $cd->delete();
+               } 
+                                                      
+           } 
            
            
            /**
