@@ -26,7 +26,7 @@ class MainController extends Controller {
 	 */
 	public function index()
     {
-    	return view('index');
+    	return view('index',compact(['cart_details']));
     }
 	
 	
@@ -55,7 +55,7 @@ class MainController extends Controller {
 
         else
 		{
-			$ret = $this->helpers->getProducts();
+			$ret = $this->helpers->getProduct()$id;
 			return view('product_details',compact(['ret']));
 		}
 		
@@ -90,6 +90,69 @@ class MainController extends Controller {
 	public function getCheckout()
     {
     	return view('checkout');
+    }
+
+    /**
+	 * Show the application Add Product screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getAddProduct()
+    {
+    	return view('a_p');
+    }    /**
+	 * Show the application Checkout screen to the user.
+	 *
+	 * @return Response
+	 */
+    public function postAddProduct(Request $request)
+    {
+        $req = $request->all();
+        //dd($req);
+        
+        $validator = Validator::make($req, [
+                             'name' => 'required',
+                             'price' => 'required|numeric'
+                             'brand' => 'required',
+                             'category' => 'required|not_in:none',
+                             'description' => 'required',
+                             'colors' => 'required',
+                             'images' => 'required'
+         ]);
+         
+         if($validator->fails())
+         {
+             $messages = $validator->messages();
+             return redirect()->back()->withInput()->with('errors',$messages);
+             //dd($messages);
+         }
+         
+         else
+         {
+         	//create product
+            $product = $this->helpers->createProduct($req);
+			$req['product_id'] = $product->id;
+			
+			//create product data
+			$productData = $this->helpers->createProductData($req);
+			
+			//create product images
+			$strings = $req['images'];
+			$imagesArr = explode(',',$strings);
+			
+			if(count($imagesArr) > 0)
+			{
+				foreach($imagesArr as $img)
+				{
+					$ret = ['id' => $product->id,"url" => $img];
+					$productImages = $this->helpers->createProductImages($req);
+				}
+			}
+			
+			Session::flash("create-product-status","success");
+			return redirect()->intended('a-p');
+         }
+                 
     }    
 
 }

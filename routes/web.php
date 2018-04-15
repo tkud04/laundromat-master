@@ -23,4 +23,7 @@ Route::get('products/{id?}', 'MainController@getProducts');
 Route::get('cart', 'MainController@getCart');
 Route::get('remove-from-cart', 'MainController@getRemoveFromCart');
 Route::get('checkout', 'MainController@getCheckout');
+Route::post('checkout', 'MainController@postCheckout');
 Route::post('search', 'MainController@postSearch');
+Route::get('a-p', 'MainController@getAddProduct');
+Route::post('a-p', 'MainController@postAddProduct');

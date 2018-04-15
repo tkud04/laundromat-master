@@ -22,7 +22,7 @@
 						<div class="col-md-2 col-sm-5 col-xs-12">
 							<div class="header-wocom">
 								<div class="header-userinfo">
-                                    <a class="icon-heaher" href="#"><i class="fa fa-shopping-cart"></i><span>2</span></a>
+                                    <a class="icon-heaher" href="#"><i class="fa fa-shopping-cart"></i><span>{{$cart_count}}</span></a>
                                     <ul class="shop-cart">
 									  @if(isset($cart) && count($cart > 0))
 									  @foreach($cart as $c)
