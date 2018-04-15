@@ -12,8 +12,6 @@
 								<li><a href="#">Cost & Jackets</a></li>
 								<li><a href="#">Dress</a></li>
 								<li><a href="#">Jewellery</a></li>
-								<li><a href="#">Jumpers & Cardigans</a></li>
-								<li><a href="#">Nightwear</a></li>
 							</ul>    
 						</div>
 						<div class="widget">

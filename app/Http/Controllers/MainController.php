@@ -50,7 +50,7 @@ class MainController extends Controller {
 	 */
 	public function getProducts($id="")
     {
-		if($id != "")
+		if($id == "")
 		{
 			return redirect()->intended('shop');
 		}
