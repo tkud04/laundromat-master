@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProductData extends Model {
+class ProductImages extends Model {
 
 	/**
 	 * The attributes that are mass assignable.
