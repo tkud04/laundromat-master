@@ -113,7 +113,7 @@
 										<a href="#"><img src="{{asset('img/banner/fashion-shoes.jpg')}}" alt=""/></a>
 									</div>
 									<div class="lane-banner">
-										<a href="#"><img src="{{asset('img/downloads/gucci-bag-1.jpg')}}" alt=""/></a>
+										<a href="#"><img src="{{asset('img/downloads/fashion-bags.jpg')}}" alt=""/></a>
 									</div>
 								</div>
 							</div>
