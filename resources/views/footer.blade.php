@@ -7,8 +7,8 @@
 								<div class="logo">
 									<a href="{{url('/')}}"><img src="{{asset('img/logo/logo-white.png')}}" alt=""></a>
 								</div>
-								<p>Lorem ipsum dolor sit amete, consectetur adipisicing sed do eiusmod tempor icididunt ut labore etel dolore
-									<br>magna aliqua. enim adminim veniam, done quisnostrud exercitation ullommodo.</p>
+								<p>'LuxuryAffairs' and the 'LuxuryAffairs' logo are trade marks of LuxuryAffairs UK Limited and are registered in numerous jurisdictions around the world.
+									<br>© Copyright 2018 LuxuryAffairs UK Limited. All rights reserved.</p>
 								<div class="social-icon">
 									<span><a href="#"><i class="fa fa-facebook"></i></a></span>
 									<span><a href="#"><i class="fa fa-twitter"></i></a></span>
@@ -26,7 +26,7 @@
 									<h4 class="title-footer">Contact Us</h4>
 									<ul class="Column-one first-col">
 										<li><i class="fa fa-map-marker"></i>
-											<a href="#">LUXURY </a> London Oxford Street 012 United Kingdom.
+											<a href="#">LUXURY AFFAIRS</a> London Oxford Street 012 United Kingdom.
 										</li>
 										<li><i class="fa fa-envelope"></i>
 											<a href="#">emailluxury@gmail.com </a><br>  
@@ -38,19 +38,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<div class="division">
-									<h4 class="title-footer">Quick Link</h4>
-									<ul class="Column-one">
-										<li><a href="#">My Acount</a></li>
-										<li><a href="#">Order history</a></li>
-										<li><a href="#">Wish list</a></li>
-										<li><a href="#">Returns</a></li>
-										<li><a href="#">Store Location</a></li>
-										<li><a href="#">Site map</a></li>   
-									</ul>
-								</div>
-							</div>
+					
 							<div class="col-md-3 hidden-sm hidden-xs">
 								<div class="tag">
 									<h4 class="title-footer">Product tags</h4>
