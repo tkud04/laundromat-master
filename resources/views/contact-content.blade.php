@@ -3,7 +3,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="contect-from">
-						<form id="contact-form" action="mail.php" method="post">
+						<form id="contact-form" action="{{url('contact')}}" method="post">
+							{!! csrf_field() !!}
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="field">
 									Name*<br/>
@@ -24,11 +25,6 @@
 							</div>
 						</form>
 						<p class="form-messege"></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 ">
-						<div id="map"></div>
 					</div>
 				</div>
 			</div>

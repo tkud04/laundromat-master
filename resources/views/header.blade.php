@@ -81,10 +81,8 @@
 								<div class="header-cart">
 									<a class="icon-heaher" href="#"><i class="fa fa-user"></i></a>
 									<ul>
-										<li><a href="#"><i class="fa fa-heart"></i>My Wishlist</a></li>
 										<li><a href="#"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
 										<li><a href="#"><i class="fa fa-hand-o-right"></i>Check Out</a></li>
-										<li><a href="#"><i class="fa fa-unlock-alt"></i>Login</a></li>
 									</ul>
 								</div>
 							</div>
