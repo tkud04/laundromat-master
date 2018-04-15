@@ -210,7 +210,7 @@ class Helper implements HelperContract
                   $temp['brand'] = $pd->brand;
                   $temp['category'] = $pd->category;
                   $temp["date"] = $p->created_at->format("D, jS F Y h:i A");
-                  array_push($ret, $temp);
+                  $ret = $temp;
               }
               return $ret;
           }
