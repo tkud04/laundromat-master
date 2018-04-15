@@ -18,18 +18,22 @@
 						</div>
 					</div>
 					<div id="Container">
+					    @if(isset($trending) && count($trending) > 0)
+						@foreach($trending as $t)
+					    <?php
+						  $url = "products/".$t['id'];
+						  $images = $t['images'];
+						 ?>
 						<div class="mix  Nightwear">
 							<div class="col-md-3 col-sm-4">
 								<div class="single-product">
 									<div class="product-image fix">
-										<a href="product-details.html">
-											<img  src="{{asset('img/product/1.jpg')}}" alt="">
-											<img class="primary-2" src="{{asset('img/product/2.jpg')}}" alt="">
+										<a href="{{$url}}">
+											<img  src="{{$images[0]}}" alt="">
+											<img class="primary-2" src="{{$images[1]}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
-											<a href="#" data-toggle="tooltip"  title="Wishlist" ><i class="fa fa-heart"></i></a>
-											<a href="#" data-toggle="tooltip" data-placement="top" title="Compare" ><i class="fa fa-retweet"></i></a>
 										</div>
 										<div class="new-area sell-area">
 											<div class="new">
@@ -44,10 +48,10 @@
 											</ul>
 										</div>
 									</div>
-									<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+									<h4 class="name"><a href="#">{{$t['name']}}</a></h4>
 									<span class="amount">
-										<del><span class="amount-del">$170.00</span></del>
-										$185.00
+										<del><span class="amount-del">${{$t['price'] + 20}}</span></del>
+										${{$t['price']}}
 									</span>
 									<div class="add-to-cart">
 										<a href="#"><i class="fa fa-shopping-cart"></i></a>
@@ -55,6 +59,8 @@
 								</div>
 							</div>
 						</div>
+						endforeach
+						@endif
 					</div>
 				</div>
 				<div class="row">
