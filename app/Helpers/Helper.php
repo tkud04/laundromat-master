@@ -177,7 +177,7 @@ class Helper implements HelperContract
                   $temp['price'] = $p->price;
                   $temp['colors'] = $pd->colors;
                   $temp['description'] = $pd->description;
-                  $temp["date"] = $c->created_at->format("D, jS F Y h:i A");
+                  $temp["date"] = $p->created_at->format("D, jS F Y h:i A");
                   array_push($ret, $temp);
                  } 
               }
