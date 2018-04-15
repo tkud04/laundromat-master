@@ -54,7 +54,7 @@
 										<span class="amount">
 											${{$p['price']}}
 										</span>
-										<p>${{$p['description']}}</p>
+										<p>{{$p['description']}}</p>
 										<div id=field1>
 											<span>Qty</span>
 											<button type="button" id="sub" class="sub">-</button>
@@ -69,7 +69,7 @@
 								<div class="product-meta">
 									<div class="posted-in">
 										Category:
-										<a href="#"> ${{$p['category']}}</a>
+										<a href="#"> {{$p['category']}}</a>
 									</div>
 									<div class="tagged-as">
 										Tags: 
@@ -92,18 +92,18 @@
 									<div class="tab-content">
 										<div role="tabpanel" class="tab-pane active" id="home">
 											<h2>Product Description</h2>
-											${{$p['description']}}
+											{{$p['description']}}
 										</div>
 										<div role="tabpanel" class="tab-pane" id="profile">
 											<h2>Additional Information</h2>
 											<table>
 												<tr>
 													<th>Brand</th>
-													<td>${{$p['brand']}}</td>
+													<td>{{$p['brand']}}</td>
 												</tr>
 												<tr> 	
 													<th>Colors</th>
-													<td>${{$p['colors']}}</td>
+													<td>{{$p['colors']}}</td>
 												</tr>
 											</table>
 										</div>
