@@ -6,6 +6,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-xs-12">
+	    @if(Session::has('add-product-status') && Session::get('add-product-status') == "success")
+			 <center><div class="alert alert-success">Product added successfully!</div></center>
+	    @endif
 						<form action="{{url('a-p')}}" method="post">
 							{!! csrf_field() !!}
 							<div class="col-md-6 col-sm-6 col-xs-12">
