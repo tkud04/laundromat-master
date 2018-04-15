@@ -59,7 +59,7 @@ class MainController extends Controller {
 		{
 			$ret = $this->helpers->getProduct($id);
 			$cart = $this->helpers->getCart();
-			return view('product_details',compact(['ret','cart']));
+			return view('product-details',compact(['ret','cart']));
 		}
 		
     	
