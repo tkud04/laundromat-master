@@ -17,17 +17,6 @@
 							</ul>    
 						</div>
 						<div class="widget">
-							<h3>Brands</h3>
-							<ul>
-								<li><a href="#">Apple span</a><span>(3)</span></li>
-								<li><a href="#">D&G</a><span>(1)</span></li>
-								<li><a href="#">Nokia</a><span>(2)</span></li>
-								<li><a href="#">Dress</a><span>(5)</span></li>
-								<li><a href="#">Sam Sung</a><span> (2)</span></li>
-								<li><a href="#">Sony</a><span> (4)</span></li>
-							</ul>    
-						</div>
-						<div class="widget">
 							<div class="widget shop-filter">
 								<h3>Price</h3>
 								<div class="info_widget">
@@ -40,17 +29,6 @@
 									</div>
 								</div>							
 							</div>
-						</div>
-						<div class="widget">
-							<h3>Color</h3>
-							<ul>
-								<li><a href="#">Black</a><span>(9)</span></li>
-								<li><a href="#">Blue</a><span>(8)</span></li>
-								<li><a href="#">Brown</a><span>(6)</span></li>
-								<li><a href="#">Orange</a><span>(8)</span></li>
-								<li><a href="#">White</a><span> (6)</span></li>
-								<li><a href="#">Yelow</a><span> (6)</span></li>
-							</ul> 
 						</div>
 					</div>
 					<div class="col-md-9 col-sm-12 col-xs-12">

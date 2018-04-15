@@ -5,6 +5,7 @@
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="product-list">
 							<h3>Best Selling</h3>
+							@if(isset($bs) && count($bs) > 0)
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="product-details.html">
@@ -25,8 +26,9 @@
 									</div>
 								</div>
 							</div>
+							@endif
 							<div class="pro-more-option">
-								<a href="#">View more <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a>
+								<a href="{{url('shop')}}">View more <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>

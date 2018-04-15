@@ -52,7 +52,7 @@
 															</div> 
 															<div class="sl-shop-link ">
 																<div class="slide-lixury-btn">
-																	<a class="s" href="#">shop now</a>
+																	<a class="s" href="{{url('shop')}}">shop now</a>
 																</div>
 															</div>  
 														</div>   
@@ -75,7 +75,7 @@
 															</div> 
 															<div class="sl-shop-link ">
 																<div class="slide-lixury-btn">
-																	<a class="s" href="#">shop now</a>
+																	<a class="s" href="{{url('shop')}}">shop now</a>
 																</div>
 															</div>  
 														</div>   
@@ -98,7 +98,7 @@
 															</div> 
 															<div class="sl-shop-link ">
 																<div class="slide-lixury-btn">
-																	<a class="s" href="#">shop now</a>
+																	<a class="s" href="{{url('shop')}}">shop now</a>
 																</div>
 															</div>  
 														</div>    
@@ -113,7 +113,7 @@
 										<a href="#"><img src="{{asset('img/banner/fashion-shoes.jpg')}}" alt=""/></a>
 									</div>
 									<div class="lane-banner">
-										<a href="#"><img src="{{asset('img/banner/fashion-bags.jpg')}}" alt=""/></a>
+										<a href="#"><img src="{{asset('img/downloads/gucci-bag-1.jpg')}}" alt=""/></a>
 									</div>
 								</div>
 							</div>
