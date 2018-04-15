@@ -122,13 +122,35 @@ class Helper implements HelperContract
               return $ret;                                 
           }
 
-		  function removeFromCart($data)
+		  function removeFromCart($id)
           {
-          	$ret = Cart::where(['user_id' => $data['user_id']]) 
-                       ->where(['product_id' => $data['product_id']])                                                      
-                       ->first();
+          	$ret = Cart::where('id',$id)->first();
 					   
 		    if($ret != null) $ret->delete();                                
+          } 
+
+		  function getCart()
+          {
+			  $ip = getenv("REMOTE_ADDR");
+			  $ret = [];
+			  
+          	  $carts = Cart::where('user_id',$ip)->get();
+					   
+		    if($carts != null)
+			{
+				foreach($carts as $c)
+				{
+					$temp = [];
+					$temp['product'] = $this->getProduct($c->product_id);
+					$temp['id'] = $c->id;
+					$temp['qty'] = $c->qty;
+					array_push($ret,$temp);
+				}
+			}
+			
+			else{}
+			
+            return $ret;			
           } 		  
           
           

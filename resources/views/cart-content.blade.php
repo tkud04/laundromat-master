@@ -3,6 +3,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
+					    @if(isset($cart) && count($cart) > 0)
 						<form action="#">				
 							<div class="table-content table-responsive">
 								<table>
@@ -17,22 +18,22 @@
 										</tr>
 									</thead>
 									<tbody>
+									@foreach($cart as $c)
+									<?php
+									   $p = $c['product'];
+								        $images = $p['images'];
+										$rm_url = url('remove-from-cart')."/".$c['id'];
+										$ct += $p['price'];
+							           ?>
 										<tr>
-											<td class="product-thumbnail"><a href="#"><img src="{{asset('img/cart/1.jpg')}}" alt="" /></a></td>
-											<td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-											<td class="product-price"><span class="amount">$165.00</span></td>
-											<td class="product-quantity"><input type="number" value="1" /></td>
-											<td class="product-subtotal">$165.00</td>
+											<td class="product-thumbnail"><a href="#"><img src="{{$images[0]}}" alt="" /></a></td>
+											<td class="product-name"><a href="#">{{$p['name']}}</a></td>
+											<td class="product-price"><span class="amount">${{$p['price']}}</span></td>
+											<td class="product-quantity"><input type="number" value="{{$c['qty']}}" /></td>
+											<td class="product-subtotal">${{$ct}}</td>
 											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
 										</tr>
-										<tr>
-											<td class="product-thumbnail"><a href="#"><img src="{{asset('img/cart/2.jpg')}}" alt="" /></a></td>
-											<td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
-											<td class="product-price"><span class="amount">$50.00</span></td>
-											<td class="product-quantity"><input type="number" value="1" /></td>
-											<td class="product-subtotal">$50.00</td>
-											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
-										</tr>
+									@endforeach
 									</tbody>
 								</table>
 							</div>
@@ -56,7 +57,7 @@
 											<tbody>
 												<tr class="cart-subtotal">
 													<th>Subtotal</th>
-													<td><span class="amount">$215.00</span></td>
+													<td><span class="amount">{{$ct}}</span></td>
 												</tr>
 												<tr class="shipping">
 													<th>Shipping</th>
@@ -82,7 +83,7 @@
 												<tr class="order-total">
 													<th>Total</th>
 													<td>
-														<strong><span class="amount">$215.00</span></strong>
+														<strong><span class="amount">{{$ct}}</span></strong>
 													</td>
 												</tr>											
 											</tbody>
@@ -94,6 +95,7 @@
 								</div>
 							</div>
 						</form>	
+						@endif
 					</div>
 				</div>
 			</div>

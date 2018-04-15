@@ -22,29 +22,37 @@
 						<div class="col-md-2 col-sm-5 col-xs-12">
 							<div class="header-wocom">
 								<div class="header-userinfo">
-                                    <a class="icon-heaher" href="#"><i class="fa fa-shopping-cart"></i><span>{{$cart_count}}</span></a>
+                                    <a class="icon-heaher" href="#"><i class="fa fa-shopping-cart"></i><span>{{count($cart)}}</span></a>
                                     <ul class="shop-cart">
-									  @if(isset($cart) && count($cart > 0))
+									  @if(isset($cart) && count($cart) > 0)
+										<?php $ct = 0; ?>
+									
 									  @foreach($cart as $c)
+								       <?php
+									   $p = $c['product'];
+								        $images = $p['images'];
+										$rm_url = url('remove-from-cart')."/".$c['id'];
+										$ct += $p['price'];
+							           ?>
                                         <li>
                                             <div class="sop-pro">
                                                 <div class="img-cart">
-                                                    <a href="#"><img src="{{asset('img/cart/1.jpg')}}" alt=""></a>
+                                                    <a href="#"><img src="{{$images[0]}}" alt=""></a>
                                                 </div>
                                                 <div class="img-dtil">
-                                                    <h4><a href="#">Commodo New</a></h4>
+                                                    <h4><a href="#">{{$p['name']}}</a></h4>
                                                     <span class="quantity">
-                                                        1 × 
-                                                        <span class="amount">$169.00</span>
+													{{$c['qty']}} × 
+                                                        <span class="amount">{{$p['price']}}</span>
                                                     </span>
                                                 </div>
                                                 <div class="close-x">
-                                                    <a href="#">X</a>
+                                                    <a href="{{$rm_url}}">X</a>
                                                 </div>
                                             </div>
                                         </li>
 									  @endforeach
-                                        <li><p class="total">Total: <span class="amount">$cart_total</span></p></li>
+                                        <li><p class="total">Total: <span class="amount">{{$ct}}</span></p></li>
                                         <li>
                                             <div class="view"><a href="{{url('checkout')}}">Checkout</a></div>
                                             <div class="chack-out"><a href="{{url('cart')}}">View Cart</a></div>

@@ -26,7 +26,8 @@ class MainController extends Controller {
 	 */
 	public function index()
     {
-    	return view('index',compact(['cart_details']));
+		$cart = $this->helpers->getCart();
+    	return view('index',compact(['cart']));
     }
 	
 	
