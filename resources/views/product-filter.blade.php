@@ -50,7 +50,7 @@
 									</div>
 									<h4 class="name"><a href="#">{{$t['name']}}</a></h4>
 									<span class="amount">
-										<del><span class="amount-del">${{$t['price'] + 20}}</span></del>
+										<del><span class="amount-del">${{$t['price'] + 200}}</span></del>
 										${{$t['price']}}
 									</span>
 									<div class="add-to-cart">
@@ -59,7 +59,7 @@
 								</div>
 							</div>
 						</div>
-						endforeach
+						@endforeach
 						@endif
 					</div>
 				</div>
