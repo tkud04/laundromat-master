@@ -55,7 +55,7 @@ class MainController extends Controller {
 
         else
 		{
-			$ret = $this->helpers->getProduct()$id;
+			$ret = $this->helpers->getProduct($id);
 			return view('product_details',compact(['ret']));
 		}
 		
