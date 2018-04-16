@@ -63,7 +63,7 @@ class MainController extends Controller {
         else
 		{
 			$p = $this->helpers->getProduct($id);
-			$related_products = $this->helpers->getProducts();
+			$related_products = $this->helpers->getProducts(); shuffle($related_products);
 			$cart = $this->helpers->getCart();
 			return view('product-details',compact(['p','cart','related_products']));
 		}
