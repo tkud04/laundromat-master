@@ -31,6 +31,7 @@ class MainController extends Controller {
 		$bs = $this->helpers->getProducts(); $bs = shuffle($bs);
 		$os = $this->helpers->getProducts(); $os = shuffle($os);
 		$ss = $this->helpers->getProducts(); $ss = shuffle($ss);
+		dd($trending);
     	return view('index',compact(['cart','bs','os','ss','trending']));
     }
 	
