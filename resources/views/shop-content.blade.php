@@ -79,13 +79,12 @@
 						</div>
 						
 						@if(isset($ret) && count($ret) > 0)
-						@foreach($ret as $p)
 						<!-- Tab panes -->
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="home">
 								<div class="row">
 									<div class="product-area">
-									 
+									@foreach($ret as $p)
 									     <?php
 										   $url = "products/".$p['id'];
 										   $images = $p['images'];
@@ -116,11 +115,13 @@
 												</div>
 											</div>
 										</div>
+										@endforeach
 									</div> 
 								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane" id="profile">
 								<div class="show-as-list">
+								@foreach($ret as $p)
 									<div class="single-product">
 										<div class="product-image fix">
 											<a href="{{$url}}">
@@ -163,10 +164,10 @@
 											</div>	
 										</div>
 									</div>
+									@endforeach
 								</div>
 							</div>
-						</div>
-						@endforeach
+						</div>						
 						@endif
 						<div class="row">
 							<div class="col-md-12">
