@@ -27,11 +27,11 @@ class MainController extends Controller {
 	public function index()
     {
 		$cart = $this->helpers->getCart();
-		$trending = $this->helpers->getProducts(); $trending = shuffle($trending);
-		$bs = $this->helpers->getProducts(); $bs = shuffle($bs);
-		$os = $this->helpers->getProducts(); $os = shuffle($os);
-		$ss = $this->helpers->getProducts(); $ss = shuffle($ss);
-		dd($trending);
+		$trending = $this->helpers->getProducts(); shuffle($trending);
+		$bs = $this->helpers->getProducts(); shuffle($bs);
+		$os = $this->helpers->getProducts(); shuffle($os);
+		$ss = $this->helpers->getProducts(); shuffle($ss);
+
     	return view('index',compact(['cart','bs','os','ss','trending']));
     }
 	
