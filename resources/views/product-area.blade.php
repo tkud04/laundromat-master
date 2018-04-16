@@ -8,14 +8,14 @@
 							@if(isset($bs) && count($bs) > 0)
 							@foreach($bs as $b)
 						      <?php
-								$url = "products/".$b['id'];
+								$url = url("products/".$b['id']);
 								$images = $b['images'];
 							  ?>
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="{{$url}}">
-										<img class="primary-1" src="{{$images[0]}}" alt="">
-										<img class="primary-2" src="{{$images[1]}}" alt="">
+										<img class="primary-1" src="{{asset($images[0])}}" alt="">
+										<img class="primary-2" src="{{asset($images[1])}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">
@@ -42,14 +42,14 @@
 							@if(isset($os) && count($os) > 0)
 							@foreach($os as $o)
 						      <?php
-								$url = "products/".$o['id'];
+								$url = url("products/".$o['id']);
 								$images = $o['images'];
 							  ?>							
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="{{$url}}">
-										<img class="primary-1" src="{{$images[0]}}" alt="">
-										<img class="primary-2" src="{{$images[1]}}" alt="">
+										<img class="primary-1" src="{{asset($images[0])}}" alt="">
+										<img class="primary-2" src="{{asset($images[1])}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">
@@ -76,14 +76,14 @@
 							@if(isset($ss) && count($ss) > 0)
 							@foreach($ss as $s)
 						      <?php
-								$url = "products/".$s['id'];
+								$url = url("products/".$s['id']);
 								$images = $s['images'];
 							  ?>
 							<div class="single-product-list">
 								<div class="product-image">
 									<a href="{{$url}}">
-										<img class="primary-1" src="{{$images[0]}}" alt="">
-										<img class="primary-2" src="{{$images[1]}}" alt="">
+										<img class="primary-1" src="{{asset($images[0])}}" alt="">
+										<img class="primary-2" src="{{asset($images[1])}}" alt="">
 									</a>
 								</div>
 								<div class="product-desc">

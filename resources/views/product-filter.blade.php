@@ -21,7 +21,7 @@
 					    @if(isset($trending) && count($trending) > 0)
 						@foreach($trending as $t)
 					    <?php
-						  $url = "products/".$t['id'];
+						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
 						 ?>
 						<div class="mix  Nightwear">
@@ -29,8 +29,8 @@
 								<div class="single-product">
 									<div class="product-image fix">
 										<a href="{{$url}}">
-											<img  src="{{$images[0]}}" alt="">
-											<img class="primary-2" src="{{$images[1]}}" alt="">
+											<img  src="{{asset($images[0])}}" alt="">
+											<img class="primary-2" src="{{asset($images[1])}}" alt="">
 										</a>
 										<div class="product-action">
 											<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>

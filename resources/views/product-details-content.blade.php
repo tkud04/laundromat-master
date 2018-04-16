@@ -117,7 +117,7 @@
 										<div class="pr-crosel related-style">
 										    @foreach($related_products as $rp)
 										<?php
-										   $rpurl = "products/".$rp['id'];
+										   $rpurl = url("products")."/".$rp['id'];
 										   $rpimages = $rp['images'];
 										 ?>
 											<div class="col-md-4">
