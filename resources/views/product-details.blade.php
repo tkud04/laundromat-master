@@ -5,7 +5,7 @@
 @section('content')
 @include("search-area")
 
-<?php $pageHead = "Details"; ?>
+<?php $pageHead = $p['name']; ?>
 @include("page-head")
 
 @include("product-details-content")
