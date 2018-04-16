@@ -19,10 +19,10 @@
 									</a>
 								</div>
 								<div class="product-desc">
-									<h4 class="name"><a href="#">{{$p['name']}}</a></h4>
+									<h4 class="name"><a href="#">{{$b['name']}}</a></h4>
 									<span class="amount">
-										<del><span class="amount-del">${{$p['price'] + 200}}</span></del>
-										${{$p['price']}}
+										<del><span class="amount-del">${{$b['price'] + 200}}</span></del>
+										${{$b['price']}}
 									</span>
 									<div class="add-to-cart">
 										<a href="#" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
