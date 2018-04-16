@@ -13,8 +13,8 @@
 									<div class="tab-content">
 										<div role="tabpanel" class="tab-pane active" id="home2">
 											<div class="zoom">
-												<a class="zoom_01" rel="group" href="{{$images[0]}}">
-													<img class="" src="{{$images[1]}}"  alt="" />
+												<a class="zoom_01" rel="group" href="{{asset($images[0])}}">
+													<img class="" src="{{asset($images[1])}}"  alt="" />
 												</a>
 											</div>
 										</div>
@@ -23,13 +23,13 @@
 										<div class="magnifier-gallery ind-style">
 											<div class="img-gallary">
 												<div role="presentation" class="active"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab">
-													<img  src="{{$images[0]}}"  alt="" /></a>
+													<img  src="{{asset($images[0])}}"  alt="" /></a>
 												</div>
 											</div>
 											@for($i = 0; $i < count($images); $i++)
 											<div class="img-gallary">
 												<div role="presentation"><a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab">
-													<img  src="{{$images[$i]}}" alt=""  /></a>
+													<img  src="{{asset($images[$i])}}" alt=""  /></a>
 												</div>
 											</div>
 											@endfor
@@ -124,8 +124,8 @@
 												<div class="single-product">
 													<div class="product-image fix">
 														<a href="{{$rpurl}}">
-															<img  src="{{$images[0]}}" alt="">
-															<img class="primary-2" src="{{$images[1]}}" alt="">
+															<img  src="{{asset($images[0])}}" alt="">
+															<img class="primary-2" src="{{asset($images[1])}}" alt="">
 														</a>
 														<div class="product-action">
 															<a href="#" data-toggle="tooltip"   title="Quick view"><i class="fa fa-eye"></i></a>
