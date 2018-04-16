@@ -124,8 +124,8 @@
 												<div class="single-product">
 													<div class="product-image fix">
 														<a href="{{$rpurl}}">
-															<img  src="{{asset($images[0])}}" alt="">
-															<img class="primary-2" src="{{asset($images[1])}}" alt="">
+															<img  src="{{asset($rpimages[0])}}" alt="">
+															<img class="primary-2" src="{{asset($rpimages[1])}}" alt="">
 														</a>
 														<div class="product-action">
 															<a href="#" data-toggle="tooltip"   title="Quick view"><i class="fa fa-eye"></i></a>
