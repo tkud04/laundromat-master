@@ -1,6 +1,6 @@
 @extends("layout")
 
-@section('title',"Details")
+@section('title',$p['name'])
 
 @section('content')
 @include("search-area")
