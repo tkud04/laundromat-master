@@ -122,6 +122,10 @@
 							<div role="tabpanel" class="tab-pane" id="profile">
 								<div class="show-as-list">
 								@foreach($ret as $p)
+									     <?php
+										   $url = "products/".$p['id'];
+										   $images = $p['images'];
+										 ?>								
 									<div class="single-product">
 										<div class="product-image fix">
 											<a href="{{$url}}">
