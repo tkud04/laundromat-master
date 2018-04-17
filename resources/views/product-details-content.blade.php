@@ -7,7 +7,7 @@
 						<?php
 						  $url = "products/".$p['id'];
 						  $images = $p['images'];
-						  $cart_url = "bag/".$p['id'];
+						  $cart_url = url("bag/".$p['id']);
 						?>
 							<div class="col-md-5 col-sm-6 col-xs-12 ">
 								<div class="main-img">
@@ -120,7 +120,7 @@
 										<?php
 										   $rpurl = url("products")."/".$rp['id'];
 										   $rpimages = $rp['images'];
-										   $cart_url = "bag/".$rp['id'];
+										   $cart_url = url("bag")."/".$rp['id'];
 										 ?>
 											<div class="col-md-4">
 												<div class="single-product">
