@@ -111,7 +111,7 @@ class MainController extends Controller {
 			$qty = 1;
 			$ip = getenv("REMOTE_ADDR");
 			$data = ['user_id' => $ip,'product_id' => $id,'qty' => $qty];
-			$status = $this->helpers->addToCart($id);
+			$status = $this->helpers->addToCart($data);
 			Session::flash("add-to-cart-status",$status);
 			return redirect()->intended('shop');
 		}
