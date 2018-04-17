@@ -92,6 +92,42 @@ class MainController extends Controller {
 		$cart = $this->helpers->getCart();
     	return view('cart',compact(['cart']));
     }
+	
+	/**
+	 * Show the application Cart screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getAddToCart($id)
+    {
+		if($id == "")
+		{
+			$cart = $this->helpers->getCart();
+			return view('cart',compact(['cart']));
+		}
+		
+		else
+		{
+			$qty = 1;
+			data = ['id' => getenv("REMOTE_ADDR"),'product_id' => $id,'' => $qty];
+			$status = $this->helpers->addToCart($id);
+			Session::flash("add-to-cart-status",$status);
+			return redirect()->intended('shop');
+		}
+		
+    	
+    }
+	
+	/**
+	 * Show the application Cart screen to the user.
+	 *
+	 * @return Response
+	 */
+	public function getRemoveFromCart()
+    {
+		$cart = $this->helpers->getCart();
+    	return view('cart',compact(['cart']));
+    }
 
 	/**
 	 * Show the application Checkout screen to the user.
