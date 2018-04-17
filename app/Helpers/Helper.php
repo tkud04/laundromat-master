@@ -124,7 +124,9 @@ class Helper implements HelperContract
 
 		  function removeFromCart($id)
           {
-          	$ret = Cart::where('id',$id)->first();
+			$ip = getenv("REMOTE_ADDR");
+          	$ret = Cart::where('user_id',$ip)
+          	    	   ->where('product_id',$id)->first();
 					   
 		    if($ret != null) $ret->delete();                                
           } 

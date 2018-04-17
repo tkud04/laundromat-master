@@ -124,10 +124,23 @@ class MainController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getRemoveFromCart()
+	public function getRemoveFromCart($id="")
     {
-		$cart = $this->helpers->getCart();
-    	return view('cart',compact(['cart']));
+		if($id == "")
+		{
+			$cart = $this->helpers->getCart();
+			return view('cart',compact(['cart']));
+		}
+		
+		else
+		{
+			$qty = 1;
+			$ip = getenv("REMOTE_ADDR");
+			$data = ['user_id' => $ip,'product_id' => $id,'qty' => $qty];
+			$status = $this->helpers->addToCart($data);
+			Session::flash("remove-from-cart-status",$status);
+			return redirect()->intended('shop');
+		}
     }
 
 	/**

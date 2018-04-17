@@ -3,6 +3,12 @@
 		<div class="main-content">
 			<div class="container">
 				<div class="row">
+	    @if(Session::has('add-to-cart-status') && Session::get('add-to-cart-status') == "success")
+			 <center><div class="alert alert-success">Added to cart!</div></center>
+
+     	@elseif(Session::has('remove-from-cart-status') && Session::get('remove-from-cart-status') == "success")
+			 <center><div class="alert alert-success">Removed from cart!</div></center>
+	    @endif
 					<div class="col-md-3 col-xs-12" >
 						<div class="widget">
 							<h3>Categories</h3>
