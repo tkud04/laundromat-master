@@ -7,6 +7,7 @@
 						<?php
 						  $url = "products/".$p['id'];
 						  $images = $p['images'];
+						  $cart_url = "bag/".$p['id'];
 						?>
 							<div class="col-md-5 col-sm-6 col-xs-12 ">
 								<div class="main-img">
@@ -62,7 +63,7 @@
 											<button type="button" id="add" class="add">+</button>
 										</div>
 										<div class="product-action">
-											<a class="add-tocart" href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart" >Add To Cart</a>
+											<a class="add-tocart" href="{{$cart_url}}" data-toggle="tooltip" data-placement="top" title="Add To Cart" >Add To Cart</a>
 										</div>	
 									</div>
 								</div>
@@ -119,6 +120,7 @@
 										<?php
 										   $rpurl = url("products")."/".$rp['id'];
 										   $rpimages = $rp['images'];
+										   $cart_url = "bag/".$rp['id'];
 										 ?>
 											<div class="col-md-4">
 												<div class="single-product">
@@ -142,7 +144,7 @@
 														${{$rp['price']}}
 													</span>
 													<div class="add-to-cart">
-														<a href="#"><i class="fa fa-shopping-cart"></i></a>
+														<a href="{{$cart_url}}"><i class="fa fa-shopping-cart"></i></a>
 													</div>
 												</div>
 											</div>

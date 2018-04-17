@@ -23,6 +23,7 @@
 					    <?php
 						  $url = url("products/".$t['id']);
 						  $images = $t['images'];
+						  $cart_url = "bag/".$t['id'];
 						 ?>
 						<div class="mix  Nightwear">
 							<div class="col-md-3 col-sm-4">
@@ -54,7 +55,7 @@
 										${{$t['price']}}
 									</span>
 									<div class="add-to-cart">
-										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="{{$cart_url}}"><i class="fa fa-shopping-cart"></i></a>
 									</div>
 								</div>
 							</div>
