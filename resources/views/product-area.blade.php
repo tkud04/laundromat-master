@@ -96,7 +96,7 @@
 										${{$s['price']}}
 									</span>
 									<div class="add-to-cart">
-										<a href="{{cart_url}}" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+										<a href="{{$cart_url}}" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
 									</div>
 								</div>
 							</div>
