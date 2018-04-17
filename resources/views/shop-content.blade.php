@@ -87,6 +87,7 @@
 									@foreach($ret as $p)
 									     <?php
 										   $url = "products/".$p['id'];
+										   $cart_url = "bag/".$p['id'];
 										   $images = $p['images'];
 										 ?>
 										<div class="col-md-4 col-sm-4 col-xs-12">
@@ -111,7 +112,7 @@
 													${{$p['price']}}
 												</span>
 												<div class="add-to-cart">
-													<a href="#"><i class="fa fa-shopping-cart"></i></a>
+													<a href="{{$cart_url}}"><i class="fa fa-shopping-cart"></i></a>
 												</div>
 											</div>
 										</div>
@@ -124,6 +125,7 @@
 								@foreach($ret as $p)
 									     <?php
 										   $url = "products/".$p['id'];
+										   $cart_url = "bag/".$p['id'];
 										   $images = $p['images'];
 										 ?>								
 									<div class="single-product">
@@ -163,7 +165,7 @@
 											</span>
 											<p>{{$p['description']}}</p>
 											<div class="product-action">
-												<a href="#" data-toggle="tooltip" data-placement="top" title="Add To Cart" ><i>Add To Cart</i></a>
+												<a href="{{$cart_url}}" data-toggle="tooltip" data-placement="top" title="Add To Cart" ><i>Add To Cart</i></a>
 												<a href="#" data-toggle="modal" data-target="#myModal"  title="Quick view"><i class="fa fa-eye"></i></a>
 											</div>	
 										</div>

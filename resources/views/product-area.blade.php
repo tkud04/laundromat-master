@@ -9,6 +9,7 @@
 							@foreach($bs as $b)
 						      <?php
 								$url = url("products/".$b['id']);
+								$cart_url = "bag/".$b['id'];
 								$images = $b['images'];
 							  ?>
 							<div class="single-product-list">
@@ -25,7 +26,7 @@
 										${{$b['price']}}
 									</span>
 									<div class="add-to-cart">
-										<a href="#" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+										<a href="{{$cart_url}}" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -43,6 +44,7 @@
 							@foreach($os as $o)
 						      <?php
 								$url = url("products/".$o['id']);
+								$cart_url = "bag/".$o['id'];
 								$images = $o['images'];
 							  ?>							
 							<div class="single-product-list">
@@ -59,7 +61,7 @@
 										${{$o['price']}}
 									</span>
 									<div class="add-to-cart">
-										<a href="#" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+										<a href="{{$cart_url}}" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
 									</div>
 								</div>
 							</div>
@@ -77,6 +79,7 @@
 							@foreach($ss as $s)
 						      <?php
 								$url = url("products/".$s['id']);
+								$cart_url = "bag/".$s['id'];
 								$images = $s['images'];
 							  ?>
 							<div class="single-product-list">
@@ -93,7 +96,7 @@
 										${{$s['price']}}
 									</span>
 									<div class="add-to-cart">
-										<a href="#" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+										<a href="{{cart_url}}" data-toggle="tooltip"  title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
 									</div>
 								</div>
 							</div>
