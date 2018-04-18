@@ -369,7 +369,7 @@
 	 Custom behaviours
 	 --------------------------*/
 	 var fp = parseInt($('#yuu').html(),10);
-	 $('#yuu').html(fp + 20);
+	 $('#yuu').html(fp + 200);
     
     
     
