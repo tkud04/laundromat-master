@@ -8,6 +8,7 @@ Interface HelperContract
         public function createUserData($data);
         public function createProduct($data);
         public function createProductData($data);
+        public function getCart();
         public function getProducts();
         public function getProduct($id);
 		public function addToCart($data);
