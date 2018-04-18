@@ -32,7 +32,7 @@
 											<td class="product-price"><span class="amount">${{$p['price']}}</span></td>
 											<td class="product-quantity"><input type="number" value="{{$c['qty']}}" /></td>
 											<td class="product-subtotal">${{$ct}}</td>
-											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+											<td class="product-remove"><a href="{{$rm_url}}"><i class="fa fa-times"></i></a></td>
 										</tr>
 									@endforeach
 									</tbody>
@@ -65,26 +65,19 @@
 													<td>
 														<ul id="shipping_method">
 															<li>
-																<input type="radio" /> 
+																<input type="radio" name="with-shipping" id = "with-shipping" checked/> 
 																<label>
-																	Flat Rate: <span class="amount">$7.00</span>
-																</label>
-															</li>
-															<li>
-																<input type="radio" /> 
-																<label>
-																	Free Shipping
+																	Flat Rate: <span class="amount">$200.00</span>
 																</label>
 															</li>
 															<li></li>
 														</ul>
-														<p><a class="shipping-calculator-button" href="#">Calculate Shipping</a></p>
 													</td>
 												</tr>
 												<tr class="order-total">
 													<th>Total</th>
 													<td>
-														<strong><span class="amount">{{$ct}}</span></strong>
+														<strong><span class="amount" id="yuu">{{$ct}}</span></strong>
 													</td>
 												</tr>											
 											</tbody>
