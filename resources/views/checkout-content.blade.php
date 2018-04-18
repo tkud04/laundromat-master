@@ -580,87 +580,14 @@
 										</div>									
 									</div>                                   									
 								</div>
-
-										<div class="col-md-12">
-											<div class="country-select">
-												<label>Country <span class="required">*</span></label>
-												<select>
-													<option value="volvo">bangladesh</option>
-												  	<option value="saab">Algeria</option>
-												  	<option value="mercedes">Afghanistan</option>
-												  	<option value="audi">Ghana</option>
-												  	<option value="audi2">Albania</option>
-												  	<option value="audi3">Bahrain</option>
-												  	<option value="audi4">Colombia</option>
-												  	<option value="audi5">Dominican Republic</option>
-												</select> 										
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="checkout-form-list">
-												<label>First Name <span class="required">*</span></label>										
-												<input type="text" placeholder="" />
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="checkout-form-list">
-												<label>Last Name <span class="required">*</span></label>										
-												<input type="text" placeholder="" />
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="checkout-form-list">
-												<label>Company Name</label>
-												<input type="text" placeholder="" />
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="checkout-form-list">
-												<label>Address <span class="required">*</span></label>
-												<input type="text" placeholder="Street address" />
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="checkout-form-list">									
-												<input type="text" placeholder="Apartment, suite, unit etc. (optional)" />
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="checkout-form-list">
-												<label>Town / City <span class="required">*</span></label>
-												<input type="text" placeholder="Town / City" />
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="checkout-form-list">
-												<label>State / County <span class="required">*</span></label>										
-												<input type="text" placeholder="" />
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="checkout-form-list">
-												<label>Postcode / Zip <span class="required">*</span></label>										
-												<input type="text" placeholder="Postcode / Zip" />
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="checkout-form-list">
-												<label>Email Address <span class="required">*</span></label>										
-												<input type="email" placeholder="" />
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="checkout-form-list">
-												<label>Phone  <span class="required">*</span></label>										
-												<input type="text" placeholder="Postcode / Zip" />
-											</div>
-										</div>								
-									</div>
+							
+							</div>
 						</div>													
 						<div class="col-lg-6 col-md-6">
 							<div class="your-order">
 								<h3>Your order</h3>
 								<div class="your-order-table table-responsive">
+								  <?php $ct = 0; ?>
 									<table>
 										<thead>
 											<tr>
@@ -669,49 +596,46 @@
 											</tr>							
 										</thead>
 										<tbody>
+										    @foreach($cart as $c)
+										<?php
+									   $p = $c['product'];
+								        $images = $p['images'];
+										$rm_url = url('remove-from-cart')."/".$c['id'];
+										$price = ($p['price']  * $c['qty']);
+										$ct += $price;
+							           ?>
 											<tr class="cart_item">
 												<td class="product-name">
-													Vestibulum suscipit <strong class="product-quantity"> x 1</strong>
+												{{$p['name']}} <strong class="product-quantity"> x {{$c['qty']}}</strong>
 												</td>
 												<td class="product-total">
-													<span class="amount">�165.00</span>
+													<span class="amount">{{$price}}</span>
 												</td>
 											</tr>
-											<tr class="cart_item">
-												<td class="product-name">
-													Vestibulum dictum magna	<strong class="product-quantity"> x 1</strong>
-												</td>
-												<td class="product-total">
-													<span class="amount">�50.00</span>
-												</td>
-											</tr>
+											@endforeach
 										</tbody>
 										<tfoot>
 											<tr class="cart-subtotal">
 												<th>Cart Subtotal</th>
-												<td><span class="amount">�215.00</span></td>
+												<td><span class="amount">${{$ct}}</span></td>
 											</tr>
 											<tr class="shipping">
 												<th>Shipping</th>
 												<td>
-													<ul>
-														<li>
-															<input type="radio" />
-															<label>
-																Flat Rate: <span class="amount">�7.00</span>
-															</label>
-														</li>
-														<li>
-															<input type="radio" />
-															<label>Free Shipping:</label>
-														</li>
-														<li></li>
-													</ul>
+														<ul id="shipping_method">
+															<li>
+																<input type="radio" name="with-shipping" id = "with-shipping" checked/> 
+																<label>
+																	Flat Rate: <span class="amount">$200.00</span>
+																</label>
+															</li>
+															<li></li>
+														</ul>
 												</td>
 											</tr>
 											<tr class="order-total">
 												<th>Order Total</th>
-												<td><strong><span class="amount">�215.00</span></strong>
+												<td><strong><span class="amount" id="yuu">{{$ct}}</span></strong></strong>
 												</td>
 											</tr>								
 										</tfoot>
