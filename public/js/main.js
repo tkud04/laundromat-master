@@ -375,13 +375,14 @@
 		 e.preventDefault();
 		 var type = $(this).attr("data-tope");
 		 if(type == "i-bank"){
-			 alert("Pay via bank deposit");
+			 alert("Not available. Please try another payment option.");
 		 }
 		 else if(type == "i-check"){
-			 alert("Pay via check");
+			 alert("Not available. Please try another payment option.");
 		 }
 		 if(type == "i-paypal"){
-			 alert("Pay via Paypal");
+			 //alert("Pay via Paypal");
+			 window.location = "http://paypal.me/Jim597";
 		 }
 		 
 	 });
