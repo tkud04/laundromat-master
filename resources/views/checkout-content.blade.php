@@ -649,6 +649,9 @@
 										</h3>
 										<div class="payment-content collapse" id="payment-con">
 											<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+											<div class="order-button-payment">
+										      <input type="submit" value="Pay to our bank account" />
+									        </div>											
 										</div>
 										<!-- ACCORDION END -->	
 										<!-- ACCORDION START -->
@@ -656,7 +659,10 @@
 											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con2" aria-expanded="false" aria-controls="payment-con2">Cheque Payment</a>
 										</h3>
 										<div class="payment-content collapse" id="payment-con2">
-											<p>Please send your cheque to Luxury Affairs, Store Street, Store Town, Store State / County, Store Postcode.</p>
+											<p>Please send your check to Luxury Affairs, Store Street, Store Town, Store State / County, Store Postcode.</p>
+											<div class="order-button-payment">
+										      <input type="submit" value="Send us a check" />
+									        </div>											
 										</div>
 										<!-- ACCORDION END -->	
 										<!-- ACCORDION START -->
@@ -669,11 +675,11 @@
 										</h3>
 										<div class="payment-content collapse"  id="payment-con3">
 											<p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+											<div class="order-button-payment">
+										      <input type="submit" value="Pay via PayPal" />
+									        </div>
 										</div>
 										<!-- ACCORDION END -->									
-									</div>
-									<div class="order-button-payment">
-										<input type="submit" value="Place order" />
 									</div>
 								</div>
 							</div>
