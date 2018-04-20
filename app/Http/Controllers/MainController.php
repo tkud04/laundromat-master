@@ -112,7 +112,7 @@ class MainController extends Controller {
 			$ip = getenv("REMOTE_ADDR");
 			$data = ['user_id' => $ip,'product_id' => $id,'qty' => $qty];
 			$status = $this->helpers->addToCart($data);
-			Session::flash("add-to-cart-status",$status);
+			Session::flash("add-to-cart-status","success");
 			return redirect()->intended('shop');
 		}
 		
@@ -138,7 +138,7 @@ class MainController extends Controller {
 			$ip = getenv("REMOTE_ADDR");
 			$data = ['user_id' => $ip,'product_id' => $id,'qty' => $qty];
 			$status = $this->helpers->removeFromCart($data);
-			Session::flash("remove-from-cart-status",$status);
+			Session::flash("remove-from-cart-status","success");
 			return redirect()->intended('shop');
 		}
     }

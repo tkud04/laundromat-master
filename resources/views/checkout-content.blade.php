@@ -656,7 +656,7 @@
 											<a class="collapsed" role="button" data-toggle="collapse" href="#payment-con2" aria-expanded="false" aria-controls="payment-con2">Cheque Payment</a>
 										</h3>
 										<div class="payment-content collapse" id="payment-con2">
-											<p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+											<p>Please send your cheque to Luxury Affairs, Store Street, Store Town, Store State / County, Store Postcode.</p>
 										</div>
 										<!-- ACCORDION END -->	
 										<!-- ACCORDION START -->
@@ -668,7 +668,7 @@
 
 										</h3>
 										<div class="payment-content collapse"  id="payment-con3">
-											<p>Pay via PayPal; you can pay with your credit card if you don�t have a PayPal account.</p>
+											<p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
 										</div>
 										<!-- ACCORDION END -->									
 									</div>
