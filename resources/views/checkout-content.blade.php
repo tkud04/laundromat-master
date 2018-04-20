@@ -650,7 +650,7 @@
 										<div class="payment-content collapse" id="payment-con">
 											<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
 											<div class="order-button-payment">
-											   <a href="#" id = "na_modal">Pay to our bank account</a>
+										      <input type="submit" class="i-pay" data-tope="i-bank" value="Pay to our bank account" />
 									        </div>											
 										</div>
 										<!-- ACCORDION END -->	
@@ -661,7 +661,7 @@
 										<div class="payment-content collapse" id="payment-con2">
 											<p>Please send your check to Luxury Affairs, Store Street, Store Town, Store State / County, Store Postcode.</p>
 											<div class="order-button-payment">
-											  <a href="#" id = "na_modal">Send us a check</a>
+										      <input type="submit" class="i-pay" data-tope="i-check" value="Send us a check" />
 									        </div>											
 										</div>
 										<!-- ACCORDION END -->	
@@ -676,7 +676,7 @@
 										<div class="payment-content collapse"  id="payment-con3">
 											<p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
 											<div class="order-button-payment">
-										      <a href="www.paypal.com" target="_blank">Pay via PayPal</a>
+										      <input type="submit" class="i-pay" data-tope="i-paypal" value="Pay via Paypal" />
 									        </div>
 										</div>
 										<!-- ACCORDION END -->									

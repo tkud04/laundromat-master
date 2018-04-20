@@ -370,6 +370,21 @@
 	 --------------------------*/
 	 var fp = parseInt($('#yuu').html(),10);
 	 $('#yuu').html(fp + 200);
+	 
+	 $('input.i-pay').click(function(e){
+		 e.preventDefault();
+		 var type = $(this).attr("data-tope");
+		 if(type == "i-bank"){
+			 alert("Pay via bank deposit");
+		 }
+		 else if(type == "i-check"){
+			 alert("Pay via check");
+		 }
+		 if(type == "i-paypal"){
+			 alert("Pay via Paypal");
+		 }
+		 
+	 });
     
     
     
