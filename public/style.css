@@ -3980,7 +3980,7 @@ p.checkout-coupon input[type="submit"] {
     width: 40%;
     padding: 8px 10px 0px;
 }
-.order-button-payment input {
+.order-button-payment input, .order-button-payment a {
     background: #cdcdcd none repeat scroll 0 0;
     border: medium none;
     color: #fff;
@@ -3993,7 +3993,7 @@ p.checkout-coupon input[type="submit"] {
     transition: all 0.3s ease 0s;
     width: 100%;
 }
-.order-button-payment input:hover {
+.order-button-payment input:hover, .order-button-payment a:hover {
     background: #B18ADE ;
 }
 .payment-content p {
